@@ -1,1 +1,9 @@
-This is from a New Branch in Local repo 
+This Branch is use for Audio Team 
+
+How to use this Branch
+
+When pulling the Project off of Github you will be pulling and pushing in this specific Branch 
+
+When you guys want your work to be in the main Branch that is something the programming team/ Department Lead can do when work/ Assets are approved 
+
+if you have any questions about using branches ask Hiten Patel or Eric Huang 
