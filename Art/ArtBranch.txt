@@ -1,1 +1,10 @@
 This New Branch for Art Assets 
+In this Branch and Folder you will be using to upload your Art Assets to the game 
+
+How to use this Branch
+
+When pulling the Project off of Github you will be pulling and pushing in this specific Branch 
+
+When you guys want your work to be in the main Branch that is something the programming team/ Department Lead can do when work/ Assets are approved 
+
+if you have any questions about using branches ask Hiten Patel or Eric Huang 
