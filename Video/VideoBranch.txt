@@ -1,1 +1,9 @@
 This is a New Branch for Video 
+
+How to use this Branch
+
+When pulling the Project off of Github you will be pulling and pushing in this specific Branch 
+
+When you guys want your work to be in the main Branch that is something the programming team/ Department Lead can do when work is completed/ Assets are approved 
+
+if you have any questions about using branches ask Hiten Patel or Eric Huang 
