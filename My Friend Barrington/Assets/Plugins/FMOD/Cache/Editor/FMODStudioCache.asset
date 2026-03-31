@@ -108,6 +108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 64000
+--- !u!114 &-8394870668870496011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BeachBallBounce
+  m_EditorClassIdentifier: 
+  Path: event:/BeachBallBounce
+  Guid:
+    Data1: 1165156434
+    Data2: 1277936531
+    Data3: -26251588
+    Data4: -738326112
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8117786681543475189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,7 +690,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Barrington.bank
   Name: Barrington
   StudioPath: bank:/Barrington
-  lastModified: 639105816945975497
+  lastModified: 639105670375944480
   FileSizes: []
   Exists: 1
 --- !u!114 &-4570363228950454038
@@ -1140,7 +1167,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639105816946045127
+  lastModified: 639105670375990156
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1212,10 +1239,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639105816946045127
+  lastModified: 639105670376015424
   FileSizes:
   - Name: 
-    Value: 4716
+    Value: 4764
   Exists: 1
 --- !u!114 &-273425419323144221
 MonoBehaviour:
@@ -1342,13 +1369,14 @@ MonoBehaviour:
   - {fileID: 4428280006011706934}
   - {fileID: 479256777611745441}
   - {fileID: 305463439247616735}
+  - {fileID: -8394870668870496011}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1556990543963516638}
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639105816946322590
+  cacheTime: 639105670378008165
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -1506,6 +1534,8 @@ MonoBehaviour:
     index: 76
   - key: event:/FallingRocks
     index: 77
+  - key: event:/BeachBallBounce
+    index: 78
 --- !u!114 &2424733617150124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,14 +1550,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/BounceCloud
   Guid:
-    Data1: 1912026241
-    Data2: 1088843481
-    Data3: -536650607
-    Data4: 1078269617
+    Data1: 236860637
+    Data2: 1150853144
+    Data3: -1319717477
+    Data4: -1963512026
   Banks:
   - {fileID: 4196543210511341658}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -1872,7 +1902,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Video.bank
   Name: Video
   StudioPath: bank:/Video
-  lastModified: 639105816946322590
+  lastModified: 639105611967217669
   FileSizes: []
   Exists: 1
 --- !u!114 &3299143982751840017
@@ -1971,7 +2001,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639105816946253534
+  lastModified: 639105670378008165
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2313,7 +2343,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/LevelSoundTracks.bank
   Name: LevelSoundTracks
   StudioPath: bank:/LevelSoundTracks
-  lastModified: 639105816946045127
+  lastModified: 639105611909645153
   FileSizes: []
   Exists: 1
 --- !u!114 &7980816308397880968
