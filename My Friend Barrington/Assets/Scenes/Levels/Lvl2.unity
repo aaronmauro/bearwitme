@@ -10410,6 +10410,26 @@ PrefabInstance:
       propertyPath: playerCollider
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Path
+      value: event:/EnterRock
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data1
+      value: 109098192
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data2
+      value: 1323100182
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data3
+      value: 1845639608
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data4
+      value: 11431492
+      objectReference: {fileID: 0}
     - target: {fileID: 984944249479492620, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -83173,6 +83193,26 @@ PrefabInstance:
     - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
       propertyPath: playerCollider
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Path
+      value: event:/EnterRock
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data1
+      value: 109098192
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data2
+      value: 1323100182
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data3
+      value: 1845639608
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data4
+      value: 11431492
       objectReference: {fileID: 0}
     - target: {fileID: 984944249479492620, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
       propertyPath: m_IsActive

@@ -93438,6 +93438,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Path
+      value: event:/EnterBush 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Guid.Data1
+      value: -542830193
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Guid.Data2
+      value: 1292326104
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Guid.Data3
+      value: 44927622
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Guid.Data4
+      value: -278469410
+      objectReference: {fileID: 0}
     - target: {fileID: 7829667745796960900, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
       propertyPath: m_Name
       value: setdress
