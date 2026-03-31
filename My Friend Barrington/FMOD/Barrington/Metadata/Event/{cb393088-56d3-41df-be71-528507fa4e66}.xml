@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{ec1d1f78-ee99-492e-8f62-1837e69270fa}">
+		<relationship name="masters">
+			<destination>{b5f7acc6-9d56-4be3-b16c-110b2976bcb2}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{0cbdbe4b-e888-4420-a047-a4182a53a2b1}</destination>
 		</relationship>
@@ -124,7 +127,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>19.921428571428571</value>
+			<value>57.508004535147393</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{e9d72a9e-dbdf-466b-b817-0a4830686dea}</destination>
