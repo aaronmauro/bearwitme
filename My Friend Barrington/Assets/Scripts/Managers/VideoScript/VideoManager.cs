@@ -5,6 +5,7 @@ using UnityEngine.Video;
 using FMODUnity;
 using FMOD.Studio;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class VideoManager : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class VideoManager : MonoBehaviour
 
     [SerializeField] private GameObject remoteImage;
     [SerializeField] private GameObject texts;
+    private TextMeshPro changeText;
     //private StudioEventEmitter fmodEventEmitter;
 
     [Header("Component")]
@@ -107,6 +109,14 @@ public class VideoManager : MonoBehaviour
         }
 
         checkVideoStatus();
+
+        if (InputManager.controlerUI)
+        {
+            changeText.text = "Press E";
+        }
+        else if (!InputManager.controlerUI) {
+            changeText.text = "Press X";
+        }
     }
 
     public void playVideo(string videoName)
