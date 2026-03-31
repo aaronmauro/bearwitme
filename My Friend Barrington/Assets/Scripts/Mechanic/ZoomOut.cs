@@ -15,19 +15,33 @@ public class ZoomOut : MonoBehaviour
     private bool colliding = false;
     private bool isRunning = false;
 
+    [SerializeField] Transform barringtonLookAt;
+
     private void Awake()
     {
-        zoomOutCam.enabled = false;
         playerCam.enabled = true;
+        zoomOutCam.enabled = false;
         originalEaseTime = brain.DefaultBlend.Time;
+        if (zoomOutCam = null) return;
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !isRunning)
         {
+
             colliding = true;
-            StartCoroutine(CameraSwitch());
+            if (zoomOutCam!= null)
+            {
+                StartCoroutine(CameraSwitch());
+
+            }
+
+            if (barringtonLookAt != null)
+            {
+                other.gameObject.GetComponent<Player>().idleLookAt = barringtonLookAt;
+            }
         }
     }
 
@@ -36,7 +50,15 @@ public class ZoomOut : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             colliding = false;
-            StartCoroutine(ReturnCamera());
+            if (zoomOutCam != null)
+            {
+                StartCoroutine(ReturnCamera());
+            }
+
+            if (barringtonLookAt != null)
+            {
+                other.gameObject.GetComponent<Player>().idleLookAt = null;
+            }
         }
     }
 
