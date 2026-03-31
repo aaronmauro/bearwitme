@@ -45317,6 +45317,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 72977845793270420, guid: 5cede1291e6af764dabb2a2cfbc775b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 593939055}
+    - targetCorrespondingSourceObject: {fileID: 72977845793270420, guid: 5cede1291e6af764dabb2a2cfbc775b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 593939058}
   m_SourcePrefab: {fileID: 100100000, guid: 5cede1291e6af764dabb2a2cfbc775b1, type: 3}
 --- !u!4 &593939049 stripped
 Transform:
@@ -45375,6 +45378,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 9159140923402842654}
+--- !u!114 &593939058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593939050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbde30950be28634fb1b9085528c116b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterSplashEvent:
+    Guid:
+      Data1: -542830193
+      Data2: 1292326104
+      Data3: 44927622
+      Data4: -278469410
+    Path: event:/EnterBush 2
 --- !u!1 &594190046
 GameObject:
   m_ObjectHideFlags: 0
