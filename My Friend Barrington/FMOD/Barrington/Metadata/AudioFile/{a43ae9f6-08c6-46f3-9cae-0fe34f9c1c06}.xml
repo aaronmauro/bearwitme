@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{a43ae9f6-08c6-46f3-9cae-0fe34f9c1c06}">
 		<property name="assetPath">
-			<value>MarvinMonkey-3.ogg</value>
+			<value>ReplacementSounds/MarvinMonkey-3.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
