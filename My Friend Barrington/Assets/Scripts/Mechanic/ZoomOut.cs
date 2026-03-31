@@ -19,17 +19,24 @@ public class ZoomOut : MonoBehaviour
 
     private void Awake()
     {
-        zoomOutCam.enabled = false;
         playerCam.enabled = true;
+        zoomOutCam.enabled = false;
         originalEaseTime = brain.DefaultBlend.Time;
+        if (zoomOutCam = null) return;
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !isRunning)
         {
+
             colliding = true;
-            StartCoroutine(CameraSwitch());
+            if (zoomOutCam!= null)
+            {
+                StartCoroutine(CameraSwitch());
+
+            }
 
             if (barringtonLookAt != null)
             {
@@ -43,7 +50,10 @@ public class ZoomOut : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             colliding = false;
-            StartCoroutine(ReturnCamera());
+            if (zoomOutCam != null)
+            {
+                StartCoroutine(ReturnCamera());
+            }
 
             if (barringtonLookAt != null)
             {
