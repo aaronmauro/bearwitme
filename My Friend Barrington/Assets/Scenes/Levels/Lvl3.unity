@@ -14,8 +14,8 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
-  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.19697583, g: 0, b: 0.4339623, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
@@ -5576,6 +5576,7 @@ GameObject:
   - component: {fileID: 72963905}
   - component: {fileID: 72963904}
   - component: {fileID: 72963908}
+  - component: {fileID: 72963909}
   m_Layer: 0
   m_Name: DamageBoundary (10)
   m_TagString: Danger
@@ -5625,7 +5626,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5697,6 +5698,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 1059747947}
+--- !u!114 &72963909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72963902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbde30950be28634fb1b9085528c116b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterSplashEvent:
+    Guid:
+      Data1: -1013049928
+      Data2: 1341041173
+      Data3: 1815267726
+      Data4: 2096699421
+    Path: event:/FallInWater
 --- !u!1 &74731058
 GameObject:
   m_ObjectHideFlags: 0
@@ -7790,6 +7810,26 @@ PrefabInstance:
       propertyPath: playerCollider
       value: 
       objectReference: {fileID: 2042413489}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Path
+      value: event:/EnterRock
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data1
+      value: 109098192
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data2
+      value: 1323100182
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data3
+      value: 1845639608
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data4
+      value: 11431492
+      objectReference: {fileID: 0}
     - target: {fileID: 8081413160724761813, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
       propertyPath: m_Name
       value: rock
@@ -12975,6 +13015,7 @@ GameObject:
   - component: {fileID: 176470487}
   - component: {fileID: 176470486}
   - component: {fileID: 176470490}
+  - component: {fileID: 176470491}
   m_Layer: 0
   m_Name: DamageBoundary (8)
   m_TagString: Danger
@@ -13024,7 +13065,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13096,6 +13137,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 1059747947}
+--- !u!114 &176470491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176470484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbde30950be28634fb1b9085528c116b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterSplashEvent:
+    Guid:
+      Data1: -1013049928
+      Data2: 1341041173
+      Data3: 1815267726
+      Data4: 2096699421
+    Path: event:/FallInWater
 --- !u!1001 &176873850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17174,6 +17234,7 @@ GameObject:
   - component: {fileID: 238587517}
   - component: {fileID: 238587516}
   - component: {fileID: 238587515}
+  - component: {fileID: 238587519}
   m_Layer: 8
   m_Name: Floor (168)
   m_TagString: Untagged
@@ -17297,6 +17358,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238587513}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &238587519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238587513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de601391997aa64185303952702224c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rocksFallEvent:
+    Guid:
+      Data1: 22140723
+      Data2: 1234708816
+      Data3: 2030373288
+      Data4: 983271244
+    Path: event:/FallingRocks
 --- !u!1001 &238987222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21593,6 +21673,46 @@ PrefabInstance:
     - target: {fileID: 3532973195442199980, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Path
+      value: event:/SignPopUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Path
+      value: event:/SignNotify
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data1
+      value: 465383039
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data2
+      value: 1238992737
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data3
+      value: -2096151642
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data4
+      value: -1933145426
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data1
+      value: 95841814
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data2
+      value: 1238803110
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data3
+      value: 321448335
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data4
+      value: 1169433237
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28329,6 +28449,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'BreakingPlatform '
       objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Path
+      value: event:/CrayonBreak
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data1
+      value: -164990687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data2
+      value: 1188422519
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data3
+      value: 414018688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data4
+      value: -441673861
+      objectReference: {fileID: 0}
     - target: {fileID: 8691021236670269275, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.50603426
@@ -29480,7 +29620,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8115678734397985337, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1059747945}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1296703489012372075, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2042413497}
   m_SourcePrefab: {fileID: 100100000, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
 --- !u!1 &404814182
 GameObject:
@@ -30472,6 +30615,26 @@ PrefabInstance:
       propertyPath: hideSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -963884251
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1132431940
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 2047064988
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -640068681
+      objectReference: {fileID: 0}
     - target: {fileID: 3548849004429277409, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -30543,6 +30706,26 @@ PrefabInstance:
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: hideSpawn
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftEnter 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -1774066737
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1339822185
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 1261092255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: 1502262494
       objectReference: {fileID: 0}
     - target: {fileID: 6101330337735327753, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_IsActive
@@ -39132,6 +39315,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 45491178}
+--- !u!114 &529195717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209151717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbde30950be28634fb1b9085528c116b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterSplashEvent:
+    Guid:
+      Data1: -542830193
+      Data2: 1292326104
+      Data3: 44927622
+      Data4: -278469410
+    Path: event:/EnterBush 2
 --- !u!1001 &529456533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45115,6 +45317,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 72977845793270420, guid: 5cede1291e6af764dabb2a2cfbc775b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 593939055}
+    - targetCorrespondingSourceObject: {fileID: 72977845793270420, guid: 5cede1291e6af764dabb2a2cfbc775b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 593939058}
   m_SourcePrefab: {fileID: 100100000, guid: 5cede1291e6af764dabb2a2cfbc775b1, type: 3}
 --- !u!4 &593939049 stripped
 Transform:
@@ -45173,6 +45378,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 9159140923402842654}
+--- !u!114 &593939058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593939050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbde30950be28634fb1b9085528c116b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterSplashEvent:
+    Guid:
+      Data1: -542830193
+      Data2: 1292326104
+      Data3: 44927622
+      Data4: -278469410
+    Path: event:/EnterBush 2
 --- !u!1 &594190046
 GameObject:
   m_ObjectHideFlags: 0
@@ -48109,11 +48333,11 @@ MonoBehaviour:
   force: 1000
   whoopieCushionEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1376301439
+      Data2: 1313730401
+      Data3: -1964869724
+      Data4: 130545153
+    Path: event:/WhoopieCushion
 --- !u!4 &636974077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: df9b4920e53b08c4bb9d325786945631, type: 3}
@@ -51484,6 +51708,7 @@ GameObject:
   - component: {fileID: 671271309}
   - component: {fileID: 671271308}
   - component: {fileID: 671271313}
+  - component: {fileID: 671271314}
   m_Layer: 0
   m_Name: DamageBoundary (11)
   m_TagString: Danger
@@ -51518,7 +51743,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -51605,6 +51830,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 1059747947}
+--- !u!114 &671271314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671271307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbde30950be28634fb1b9085528c116b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterSplashEvent:
+    Guid:
+      Data1: -1013049928
+      Data2: 1341041173
+      Data3: 1815267726
+      Data4: 2096699421
+    Path: event:/FallInWater
 --- !u!1001 &671480123
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75297,6 +75541,46 @@ PrefabInstance:
       propertyPath: overshootRotation.z
       value: -60
       objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Path
+      value: event:/SignPopUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Path
+      value: event:/SignNotify
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data1
+      value: 465383039
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data2
+      value: 1238992737
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data3
+      value: -2096151642
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data4
+      value: -1933145426
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data1
+      value: 95841814
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data2
+      value: 1238803110
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data3
+      value: 321448335
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data4
+      value: 1169433237
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1579482107699614202, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
@@ -76093,23 +76377,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Path
-      value: event:/RiftCloser
+      value: event:/RiftExit
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data1
-      value: 955871069
+      value: -963884251
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data2
-      value: 1333168496
+      value: 1132431940
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data3
-      value: -2073369439
+      value: 2047064988
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data4
-      value: -1254468461
+      value: -640068681
       objectReference: {fileID: 0}
     - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
@@ -76181,23 +76465,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Path
-      value: event:/RiftCloser
+      value: event:/RiftEnter 2
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data1
-      value: 955871069
+      value: -1774066737
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data2
-      value: 1333168496
+      value: 1339822185
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data3
-      value: -2073369439
+      value: 1261092255
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data4
-      value: -1254468461
+      value: 1502262494
       objectReference: {fileID: 0}
     - target: {fileID: 6122235600440755055, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalScale.y
@@ -78036,6 +78320,26 @@ PrefabInstance:
       propertyPath: tpTransform
       value: 
       objectReference: {fileID: 950115277}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -963884251
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1132431940
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 2047064988
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -640068681
+      objectReference: {fileID: 0}
     - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -78643,6 +78947,7 @@ GameObject:
   - component: {fileID: 884878562}
   - component: {fileID: 884878561}
   - component: {fileID: 884878565}
+  - component: {fileID: 884878566}
   m_Layer: 0
   m_Name: DamageBoundary (9)
   m_TagString: Danger
@@ -78692,7 +78997,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -78764,6 +79069,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 1059747947}
+--- !u!114 &884878566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884878559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbde30950be28634fb1b9085528c116b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waterSplashEvent:
+    Guid:
+      Data1: -1013049928
+      Data2: 1341041173
+      Data3: 1815267726
+      Data4: 2096699421
+    Path: event:/FallInWater
 --- !u!1001 &885411860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82885,6 +83209,26 @@ PrefabInstance:
       propertyPath: hideSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -963884251
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1132431940
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 2047064988
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -640068681
+      objectReference: {fileID: 0}
     - target: {fileID: 3548849004429277409, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -82972,6 +83316,26 @@ PrefabInstance:
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: hideSpawn
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -963884251
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1132431940
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 2047064988
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -640068681
       objectReference: {fileID: 0}
     - target: {fileID: 6122235600440755055, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalScale.x
@@ -93096,6 +93460,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Path
+      value: event:/EnterBush 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Guid.Data1
+      value: -542830193
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Guid.Data2
+      value: 1292326104
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Guid.Data3
+      value: 44927622
+      objectReference: {fileID: 0}
+    - target: {fileID: 5397136170337851891, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
+      propertyPath: enterBushEvent.Guid.Data4
+      value: -278469410
+      objectReference: {fileID: 0}
     - target: {fileID: 7829667745796960900, guid: 242f07ddcebce484ca4a0237f353ed39, type: 3}
       propertyPath: m_Name
       value: setdress
@@ -94498,6 +94882,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'BreakingPlatform '
       objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Path
+      value: event:/CrayonBreak
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data1
+      value: -164990687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data2
+      value: 1188422519
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data3
+      value: 414018688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data4
+      value: -441673861
+      objectReference: {fileID: 0}
     - target: {fileID: 8691021236670269275, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.45902994
@@ -94681,6 +95085,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de601391997aa64185303952702224c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rocksFallEvent:
+    Guid:
+      Data1: 22140723
+      Data2: 1234708816
+      Data3: 2030373288
+      Data4: 983271244
+    Path: event:/FallingRocks
 --- !u!1 &1096449117
 GameObject:
   m_ObjectHideFlags: 0
@@ -107208,6 +107619,77 @@ MonoBehaviour:
   floatSpeed: 1
   rockAngle: 0
   rockSpeed: 0
+--- !u!1 &1281168443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1281168446}
+  - component: {fileID: 1281168445}
+  - component: {fileID: 1281168444}
+  m_Layer: 0
+  m_Name: CaveVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1281168444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281168443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 0
+  priority: 1.13
+  blendDistance: 1
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 1803b966e591f2d478e2feba4bbe8ca5, type: 2}
+--- !u!65 &1281168445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281168443}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1281168446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281168443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 129.3, y: 43.785767, z: -27.4}
+  m_LocalScale: {x: 365.73654, y: 121.516426, z: 121.516426}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1281256960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -114605,6 +115087,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakingPlatform  (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Path
+      value: event:/CrayonBreak
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data1
+      value: -164990687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data2
+      value: 1188422519
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data3
+      value: 414018688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data4
+      value: -441673861
+      objectReference: {fileID: 0}
     - target: {fileID: 8691021236670269275, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.48253873
@@ -117946,6 +118448,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreakingPlatform  (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Path
+      value: event:/CrayonBreak
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data1
+      value: -164990687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data2
+      value: 1188422519
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data3
+      value: 414018688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data4
+      value: -441673861
+      objectReference: {fileID: 0}
     - target: {fileID: 8691021236670269275, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.48253873
@@ -118219,6 +118741,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 150048528}
     m_Modifications:
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -963884251
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1132431940
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 2047064988
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -640068681
+      objectReference: {fileID: 0}
     - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -118306,6 +118848,26 @@ PrefabInstance:
     - target: {fileID: 3939149065412249286, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalPosition.y
       value: -53.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftEnter 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -1774066737
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1339822185
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 1261092255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: 1502262494
       objectReference: {fileID: 0}
     - target: {fileID: 6122235600440755055, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalPosition.x
@@ -122778,6 +123340,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Path
+      value: event:/SignPopUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Path
+      value: event:/SignNotify
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data1
+      value: 465383039
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data2
+      value: 1238992737
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data3
+      value: -2096151642
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: popupSignEvent.Guid.Data4
+      value: -1933145426
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data1
+      value: 95841814
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data2
+      value: 1238803110
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data3
+      value: 321448335
+      objectReference: {fileID: 0}
+    - target: {fileID: 5184825934837314712, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: notifySignEvent.Guid.Data4
+      value: 1169433237
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -124407,6 +125009,26 @@ PrefabInstance:
     - target: {fileID: 4111291396206245503, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
       propertyPath: m_Name
       value: 'BreakingPlatform '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Path
+      value: event:/CrayonBreak
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data1
+      value: -164990687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data2
+      value: 1188422519
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data3
+      value: 414018688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6388048492599702195, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
+      propertyPath: crayonBreakEvent.Guid.Data4
+      value: -441673861
       objectReference: {fileID: 0}
     - target: {fileID: 8691021236670269275, guid: c83d6da075900724cb4cf5c9146a0d99, type: 3}
       propertyPath: m_LocalScale.y
@@ -130245,6 +130867,26 @@ PrefabInstance:
       propertyPath: waves
       value: 
       objectReference: {fileID: 963874233}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Path
+      value: event:/EnterRock
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data1
+      value: 109098192
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data2
+      value: 1323100182
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data3
+      value: 1845639608
+      objectReference: {fileID: 0}
+    - target: {fileID: 967108042955001398, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
+      propertyPath: enterBushEvent.Guid.Data4
+      value: 11431492
+      objectReference: {fileID: 0}
     - target: {fileID: 8081413160724761813, guid: 8074ee36e5038984dae3e79258ac9698, type: 3}
       propertyPath: m_Name
       value: rock (1)
@@ -134135,6 +134777,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 279984464750783669, guid: 27e533cfc306dfc428913ac1fc4b8232, type: 3}
   m_PrefabInstance: {fileID: 1633500644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1633622514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1296703489012372075, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
+  m_PrefabInstance: {fileID: 403082307}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1633881485
 GameObject:
@@ -139885,6 +140532,26 @@ PrefabInstance:
       propertyPath: mapUI
       value: 
       objectReference: {fileID: 1995304290}
+    - target: {fileID: 8390666674813849062, guid: 66ee247faf9217e43923331782975408, type: 3}
+      propertyPath: mapOpenEvent.Path
+      value: event:/MapOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390666674813849062, guid: 66ee247faf9217e43923331782975408, type: 3}
+      propertyPath: mapOpenEvent.Guid.Data1
+      value: -883832258
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390666674813849062, guid: 66ee247faf9217e43923331782975408, type: 3}
+      propertyPath: mapOpenEvent.Guid.Data2
+      value: 1271232090
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390666674813849062, guid: 66ee247faf9217e43923331782975408, type: 3}
+      propertyPath: mapOpenEvent.Guid.Data3
+      value: 1680921741
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390666674813849062, guid: 66ee247faf9217e43923331782975408, type: 3}
+      propertyPath: mapOpenEvent.Guid.Data4
+      value: 562654117
+      objectReference: {fileID: 0}
     - target: {fileID: 9060225993057442114, guid: 66ee247faf9217e43923331782975408, type: 3}
       propertyPath: m_Name
       value: MapManager Variant
@@ -148644,6 +149311,26 @@ PrefabInstance:
       propertyPath: hideSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -963884251
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1132431940
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 2047064988
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -640068681
+      objectReference: {fileID: 0}
     - target: {fileID: 3548849004429277409, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -148716,6 +149403,26 @@ PrefabInstance:
       propertyPath: hideSpawn
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftEnter 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -1774066737
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1339822185
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 1261092255
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: 1502262494
+      objectReference: {fileID: 0}
     - target: {fileID: 6122235600440755055, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.495
@@ -148770,6 +149477,26 @@ PrefabInstance:
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: hideSpawn
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftEnter 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -1774066737
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1339822185
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 1261092255
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: 1502262494
       objectReference: {fileID: 0}
     - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
@@ -148850,6 +149577,26 @@ PrefabInstance:
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: hideSpawn
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: 440357933
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1205063132
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: -1657311829
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -569442096
       objectReference: {fileID: 0}
     - target: {fileID: 6122235600440755055, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalPosition.x
@@ -176049,10 +176796,22 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
   m_PrefabInstance: {fileID: 403082307}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1633622514}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7914986cb1bb14a4c98510d32873dfd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2042413497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633622514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a9d945b7c8b934fad134bea93314d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2044241735
@@ -176779,6 +177538,26 @@ PrefabInstance:
       propertyPath: tpTransform
       value: 
       objectReference: {fileID: 950115277}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -963884251
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1132431940
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 2047064988
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -640068681
+      objectReference: {fileID: 0}
     - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -177871,23 +178650,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Path
-      value: event:/RiftCloser
+      value: event:/RiftExit
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data1
-      value: 955871069
+      value: -963884251
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data2
-      value: 1333168496
+      value: 1132431940
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data3
-      value: -2073369439
+      value: 2047064988
       objectReference: {fileID: 0}
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data4
-      value: -1254468461
+      value: -640068681
       objectReference: {fileID: 0}
     - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
@@ -177979,23 +178758,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Path
-      value: event:/RiftCloser
+      value: event:/RiftEnter 2
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data1
-      value: 955871069
+      value: -1774066737
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data2
-      value: 1333168496
+      value: 1339822185
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data3
-      value: -2073369439
+      value: 1261092255
       objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data4
-      value: -1254468461
+      value: 1502262494
       objectReference: {fileID: 0}
     - target: {fileID: 6122235600440755055, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalPosition.x
@@ -181940,6 +182719,26 @@ PrefabInstance:
       propertyPath: tpTransform
       value: 
       objectReference: {fileID: 950115277}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Path
+      value: event:/RiftExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data1
+      value: -963884251
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data2
+      value: 1132431940
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data3
+      value: 2047064988
+      objectReference: {fileID: 0}
+    - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: riftExitEvent.Guid.Data4
+      value: -640068681
+      objectReference: {fileID: 0}
     - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -183792,6 +184591,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2063862633450114000, guid: 73469b6d879e2f1458aa7b8d23f3a247, type: 3}
       insertIndex: -1
       addedObject: {fileID: 529195716}
+    - targetCorrespondingSourceObject: {fileID: 2063862633450114000, guid: 73469b6d879e2f1458aa7b8d23f3a247, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 529195717}
   m_SourcePrefab: {fileID: 100100000, guid: 73469b6d879e2f1458aa7b8d23f3a247, type: 3}
 --- !u!1001 &3901566815960334848
 PrefabInstance:
@@ -184700,3 +185502,4 @@ SceneRoots:
   - {fileID: 419730128}
   - {fileID: 2131061743}
   - {fileID: 442297106}
+  - {fileID: 1281168446}
