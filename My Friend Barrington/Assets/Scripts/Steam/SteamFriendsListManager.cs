@@ -62,7 +62,8 @@ public class SteamFriendsListManager : MonoBehaviour
             string friendName = SteamFriends.GetFriendPersonaName(friendSteamID);
             EPersonaState friendState = SteamFriends.GetFriendPersonaState(friendSteamID);
 
-            Debug.Log($"Friend {i}: {friendName} ({friendSteamID.m_SteamID}), Status: {friendState}");
+            // Use ToString() to avoid accessing internal fields directly
+            Debug.Log($"Friend {i}: {friendName} ({friendSteamID.ToString()}), Status: {friendState}");
         }
 
         // Example of what to do next: maybe update a UI list of friends
