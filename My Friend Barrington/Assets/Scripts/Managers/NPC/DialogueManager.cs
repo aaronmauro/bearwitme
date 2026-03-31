@@ -505,6 +505,17 @@ public class DialogueManager : MonoBehaviour
             }
 
             // Add other tag handlers here (e.g. 'name', 'portrait', etc.)
+            // thank you! i think i will - DV
+            else if (key == "stickyGive")
+            {
+                Debug.Log("why");
+                Debug.Log(animator);
+                animator.gameObject.transform.GetChild(0).gameObject.GetComponent<stickyGetHandler>().StickyGive();
+            }
+            else if (key == "stickyGet")
+            {
+                animator.gameObject.transform.GetChild(0).gameObject.GetComponent<stickyGetHandler>().StickyGet();
+            }
         }
     }
 }
