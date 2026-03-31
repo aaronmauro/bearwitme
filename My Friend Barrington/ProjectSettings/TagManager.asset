@@ -24,7 +24,7 @@ TagManager:
   - MovableBox
   - PlayerMovableBox
   - Ship
-  - 
+  - DangerIndicator
   - 
   - 
   - 
