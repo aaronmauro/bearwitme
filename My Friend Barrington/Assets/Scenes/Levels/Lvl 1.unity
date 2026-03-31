@@ -63038,63 +63038,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6063002404625692640, guid: 219d9e9769fbf4d43b29db0c43c24e97, type: 3}
   m_PrefabInstance: {fileID: 853355416}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &854942531
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3326371560259122948, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_Name
-      value: SteamFriends
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -52.726856
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.683114
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 20.998169
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
 --- !u!1001 &856198984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -160129,7 +160072,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 822364917551056828, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3786230790206110539, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -160157,51 +160100,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: quitGameSound.Guid.Data1
-      value: -1049542646
+      value: -1703301059
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: quitGameSound.Guid.Data2
-      value: 1100196044
+      value: 1314308550
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: quitGameSound.Guid.Data3
-      value: 881503159
+      value: 191827622
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: quitGameSound.Guid.Data4
-      value: 11346086
+      value: 1075665124
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: pauseGameSound.Guid.Data1
-      value: -689578050
+      value: -1974186419
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: pauseGameSound.Guid.Data2
-      value: 1194632762
+      value: 1203726753
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: pauseGameSound.Guid.Data3
-      value: -660063304
+      value: 1182801054
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: pauseGameSound.Guid.Data4
-      value: -2124493412
+      value: -1074301573
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: resumeGameSound.Guid.Data1
-      value: -1435102404
+      value: -1369656748
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: resumeGameSound.Guid.Data2
-      value: 1122442204
+      value: 1253991384
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: resumeGameSound.Guid.Data3
-      value: 660266158
+      value: 289751174
       objectReference: {fileID: 0}
     - target: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: resumeGameSound.Guid.Data4
-      value: -788880369
+      value: -272378485
       objectReference: {fileID: 0}
     - target: {fileID: 8016816507129009281, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: m_Pivot.x
@@ -170208,6 +170151,10 @@ PrefabInstance:
       propertyPath: mapIcon
       value: 
       objectReference: {fileID: 351235493}
+    - target: {fileID: 4617744645944849276, guid: 6acf7eb743330f044884f2daf7b14c1c, type: 3}
+      propertyPath: mapIcon
+      value: 
+      objectReference: {fileID: 1225537396}
     - target: {fileID: 4645967682292165197, guid: 6acf7eb743330f044884f2daf7b14c1c, type: 3}
       propertyPath: mapIcon
       value: 
@@ -171384,7 +171331,6 @@ SceneRoots:
   - {fileID: 2032068756}
   - {fileID: 3451034610667241180}
   - {fileID: 1093622152}
-  - {fileID: 854942531}
   - {fileID: 492645880}
   - {fileID: 2111894833}
   - {fileID: 481582501}
