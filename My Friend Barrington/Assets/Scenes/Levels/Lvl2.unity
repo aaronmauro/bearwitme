@@ -38227,9 +38227,81 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2292400822282706679, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.12437701
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292400822282706679, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.39626622
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292400822282706679, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.6132076
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292400822282706679, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.1284265
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292400822282706679, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.38441616
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292400822282706679, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.6981132
+      objectReference: {fileID: 0}
     - target: {fileID: 2403040894672761038, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770370566787122388, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.1792453
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770370566787122388, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.3994228
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770370566787122388, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.7169812
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770370566787122388, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.1251335
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770370566787122388, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.36150253
+      objectReference: {fileID: 0}
+    - target: {fileID: 3770370566787122388, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.7169812
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409294909122465003, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.12437701
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409294909122465003, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 0.39310217
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409294909122465003, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0.6132076
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409294909122465003, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.17661981
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409294909122465003, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.43037438
+      objectReference: {fileID: 0}
+    - target: {fileID: 5409294909122465003, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.764151
       objectReference: {fileID: 0}
     - target: {fileID: 5835645931884086095, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
       propertyPath: m_Pivot.x
