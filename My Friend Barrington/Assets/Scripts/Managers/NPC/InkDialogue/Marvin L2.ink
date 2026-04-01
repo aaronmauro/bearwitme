@@ -6,7 +6,7 @@ Stupid cloud formations. Of course it was silly of me to think the clouds would 
 
 I predict this storm is going to be a bad one, Barrington. I’m not sure how hard it’ll be to weather this one.
 
-I mean, I can easily swing through the trees with my tail, but yours seems to be cut a bit short. Here, take this item - I came across it in my travels and I can’t quite make sense of it. You might be able to swing along with me.
+I mean, I can easily swing through the trees with my tail, but yours seems to be cut a bit short. Here, take this item - I came across it in my travels and I can’t quite make sense of it. You might be able to swing along with me. #stickyGive
 
-But hurry, I can’t predict when the thunder will start. 
+But hurry, I can’t predict when the thunder will start. #stickyGet
 -> END 

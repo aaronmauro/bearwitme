@@ -142,7 +142,7 @@ public class DialogueTrigger : MonoBehaviour
 
             playerInRange = false;
             var dm = DialogueManager.GetInstance();
-            dm.animator = null;
+            //dm.animator = null; player can escape trigger while walking, messes up things - DV
 
             if (player != null)
             {
