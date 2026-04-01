@@ -3050,6 +3050,7 @@ MonoBehaviour:
   inkJSON: {fileID: 4900000, guid: 370e9b06c74db8d4cb98701e54d0c097, type: 3}
   npcName: 
   npcImage: {fileID: 0}
+  npcDialogueBox: {fileID: 0}
   rifts: []
 --- !u!1001 &1260833670
 PrefabInstance:
@@ -5609,6 +5610,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a13cbc07a988f494eb9c3321da571056, type: 3}
+--- !u!1001 &6270326365962467528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.030054264
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.9995483
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -176.556
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 233773595070995535, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279639154307403026, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
+      propertyPath: m_Name
+      value: RiftParticleBefore
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d5e2441e5dbf9b4a9c68b0d954434eb, type: 3}
 --- !u!1001 &7790862402484648939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5760,3 +5818,4 @@ SceneRoots:
   - {fileID: 94214260}
   - {fileID: 337431218}
   - {fileID: 128401320}
+  - {fileID: 6270326365962467528}
