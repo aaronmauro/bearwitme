@@ -168,13 +168,6 @@ MonoBehaviour:
   fixedInAirVelocity: 0.37
   coyoteTime: 0.1
   idleTime: 10
-  pushingBlockEvent:
-    Guid:
-      Data1: -1241013362
-      Data2: 1074978123
-      Data3: -689849670
-      Data4: 1034588062
-    Path: event:/Pushing
   visual: {fileID: 0}
   turnSmoothTime: 0.12
   playerInput: 0
@@ -315,7 +308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3922459532592896812
 Transform:
   m_ObjectHideFlags: 0
