@@ -1474,7 +1474,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276135589}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Animation: {fileID: 7400000, guid: 4865166bfc56be144bd4c2a83ef82d65, type: 2}
   m_Animations:
@@ -1528,7 +1528,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276135589}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 141a798bbb6665549913e80ad436d284, type: 2}
   m_CullingMode: 0
@@ -4974,6 +4974,18 @@ PrefabInstance:
     - target: {fileID: 3617917762391505955, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
       propertyPath: m_SizeDelta.y
       value: 281
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617917762391505955, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617917762391505955, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617917762391505955, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 3617917762391505955, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
       propertyPath: m_LocalPosition.x
