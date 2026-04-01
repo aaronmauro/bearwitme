@@ -44,7 +44,7 @@ public class stickyGetHandler : MonoBehaviour
     public void StickyGet()
     {
         oldPos = transform;
-        targetPos.position = playerPos.position;
+        targetPos.position = playerPos.position + new Vector3(0, 1, 0);
         targetPos.localScale = Vector3.zero;
         offWhenDone = true;
         startTime = Time.time;
