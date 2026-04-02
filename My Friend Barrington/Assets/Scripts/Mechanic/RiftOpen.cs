@@ -5,6 +5,9 @@ public class RiftOpen : MonoBehaviour
     [Header("Target Object")]
     [SerializeField] private Transform targetObject;
 
+    [Header("Particle System")]
+    [SerializeField] private ParticleSystem particleSystemToStop;
+
     [Header("Scale Settings")]
     [SerializeField] private Vector3 smallScale = new Vector3(0.1f, 0.1f, 0.1f);
     [SerializeField] private Vector3 openScale = new Vector3(20f, 20f, 20f);
@@ -55,6 +58,12 @@ public class RiftOpen : MonoBehaviour
         {
             isActive = true;
             timer = delayBeforeOpen;
+
+            // Stop particle system
+            if (particleSystemToStop != null)
+            {
+                particleSystemToStop.Stop();
+            }
         }
     }
 }
