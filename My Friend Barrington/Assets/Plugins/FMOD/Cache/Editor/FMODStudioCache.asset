@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-8929230132943412663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PeteParrot
+  m_EditorClassIdentifier: 
+  Path: event:/PeteParrot
+  Guid:
+    Data1: -788340723
+    Data2: 1242775541
+    Data3: 256658618
+    Data4: 1259448988
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1950
 --- !u!114 &-8903838550486826858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,33 +270,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 265300
---- !u!114 &-7847843107181430239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Pushing
-  m_EditorClassIdentifier: 
-  Path: event:/Pushing
-  Guid:
-    Data1: -1241013362
-    Data2: 1074978123
-    Data3: -689849670
-    Data4: 1034588062
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3297
 --- !u!114 &-7561240035532687974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +297,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7218173690600723810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ParentsMuffledArguing1
+  m_EditorClassIdentifier: 
+  Path: event:/ParentsMuffledArguing1
+  Guid:
+    Data1: 455214045
+    Data2: 1076727916
+    Data3: -1662680698
+    Data4: -645948036
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 86749
 --- !u!114 &-7074920000442376174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,6 +351,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2089
+--- !u!114 &-7019486187128859815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CaveEchoDrips
+  m_EditorClassIdentifier: 
+  Path: event:/CaveEchoDrips
+  Guid:
+    Data1: 1389121323
+    Data2: 1303843985
+    Data3: 924826519
+    Data4: -1410166048
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4400
 --- !u!114 &-6707900450110708614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +744,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Barrington.bank
   Name: Barrington
   StudioPath: bank:/Barrington
-  lastModified: 639106634501358743
+  lastModified: 639107313859283118
   FileSizes: []
   Exists: 1
 --- !u!114 &-4570363228950454038
@@ -774,6 +828,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &-3814484302680410048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PushPillow
+  m_EditorClassIdentifier: 
+  Path: event:/PushPillow
+  Guid:
+    Data1: 1384095106
+    Data2: 1325610995
+    Data3: -1698016626
+    Data4: 1908811617
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-3715664320739587067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,10 +1004,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/ParentsMuffledArguing
   Guid:
-    Data1: 455214045
-    Data2: 1076727916
-    Data3: -1662680698
-    Data4: -645948036
+    Data1: -1865704335
+    Data2: 1189844718
+    Data3: -1015958595
+    Data4: -1831194466
   Banks:
   - {fileID: 4196543210511341658}
   IsStream: 1
@@ -935,7 +1016,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 86749
+  Length: 26436
 --- !u!114 &-3039580270039724497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1167,7 +1248,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639106634501470336
+  lastModified: 639107345540743589
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1239,10 +1320,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639106634501491040
+  lastModified: 639107345540756173
   FileSizes:
   - Name: 
-    Value: 4764
+    Value: 5042
   Exists: 1
 --- !u!114 &-273425419323144221
 MonoBehaviour:
@@ -1264,6 +1345,33 @@ MonoBehaviour:
     Data4: -2092062522
   Banks:
   - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-205903646520281575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/Pushing
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/Pushing
+  Guid:
+    Data1: -1537251630
+    Data2: 1288498291
+    Data3: -1079049064
+    Data4: -682505828
+  Banks:
+  - {fileID: -4602078392209194838}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1354,7 +1462,6 @@ MonoBehaviour:
   - {fileID: 8542267199767073969}
   - {fileID: -8062479292418897949}
   - {fileID: 2424733617150124}
-  - {fileID: -7847843107181430239}
   - {fileID: 9152379643696747853}
   - {fileID: -3329115353960962068}
   - {fileID: 6584685070642504346}
@@ -1370,13 +1477,20 @@ MonoBehaviour:
   - {fileID: 479256777611745441}
   - {fileID: 305463439247616735}
   - {fileID: -8394870668870496011}
+  - {fileID: -8929230132943412663}
+  - {fileID: 1616991753964196954}
+  - {fileID: -7019486187128859815}
+  - {fileID: -3814484302680410048}
+  - {fileID: -7218173690600723810}
+  - {fileID: 4003437984083138798}
+  - {fileID: -205903646520281575}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1556990543963516638}
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639106634502019270
+  cacheTime: 639107353081351923
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -1504,38 +1618,50 @@ MonoBehaviour:
     index: 61
   - key: event:/BounceCloud
     index: 62
-  - key: event:/Pushing
-    index: 63
   - key: event:/StickyHand
-    index: 64
+    index: 63
   - key: event:/PlayerSFX/SoftFootsteps
-    index: 65
+    index: 64
   - key: event:/PlayerSFX/Jump1
-    index: 66
+    index: 65
   - key: event:/MapOpen
-    index: 67
+    index: 66
   - key: event:/RiftExit
-    index: 68
+    index: 67
   - key: event:/RiftEnter 2
-    index: 69
+    index: 68
   - key: event:/SignNotify
-    index: 70
+    index: 69
   - key: event:/SignPopUp
-    index: 71
+    index: 70
   - key: event:/GlassFall_1
-    index: 72
+    index: 71
   - key: event:/GlassFall
-    index: 73
+    index: 72
   - key: event:/PillowGet_1
-    index: 74
+    index: 73
   - key: event:/PillowGet
-    index: 75
+    index: 74
   - key: event:/EnterRock
-    index: 76
+    index: 75
   - key: event:/FallingRocks
-    index: 77
+    index: 76
   - key: event:/BeachBallBounce
+    index: 77
+  - key: event:/PeteParrot
     index: 78
+  - key: event:/MarvinMonkey
+    index: 79
+  - key: event:/CaveEchoDrips
+    index: 80
+  - key: event:/PushPillow
+    index: 81
+  - key: event:/ParentsMuffledArguing1
+    index: 82
+  - key: event:/CaveWinds
+    index: 83
+  - key: event:/PlayerSFX/Pushing
+    index: 84
 --- !u!114 &2424733617150124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1806,6 +1932,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1616991753964196954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MarvinMonkey
+  m_EditorClassIdentifier: 
+  Path: event:/MarvinMonkey
+  Guid:
+    Data1: 413070869
+    Data2: 1218451269
+    Data3: -1890553939
+    Data4: -339658366
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1751140790306869085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1902,7 +2055,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Video.bank
   Name: Video
   StudioPath: bank:/Video
-  lastModified: 639106634502019270
+  lastModified: 639107301459247618
   FileSizes: []
   Exists: 1
 --- !u!114 &3299143982751840017
@@ -1986,6 +2139,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 20450
+--- !u!114 &4003437984083138798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CaveWinds
+  m_EditorClassIdentifier: 
+  Path: event:/CaveWinds
+  Guid:
+    Data1: -562560077
+    Data2: 1093426496
+    Data3: -1996691543
+    Data4: -1432624786
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13704
 --- !u!114 &4196543210511341658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2001,7 +2181,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639106634501907969
+  lastModified: 639107353081351923
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2343,7 +2523,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/LevelSoundTracks.bank
   Name: LevelSoundTracks
   StudioPath: bank:/LevelSoundTracks
-  lastModified: 639106634501458849
+  lastModified: 639107301437737703
   FileSizes: []
   Exists: 1
 --- !u!114 &7980816308397880968

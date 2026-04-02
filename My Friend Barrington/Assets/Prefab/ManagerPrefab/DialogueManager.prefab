@@ -48,6 +48,7 @@ MonoBehaviour:
   dialogueText: {fileID: 0}
   dialogueName: {fileID: 0}
   dialogueImage: {fileID: 0}
+  dialogueBox: {fileID: 0}
   choices:
   - {fileID: 0}
   - {fileID: 0}
@@ -55,5 +56,26 @@ MonoBehaviour:
   continueButton: {fileID: 0}
   typingSpeed: 0.01
   canSkipTyping: 0
+  dialogueMarvinEvent:
+    Guid:
+      Data1: 413070869
+      Data2: 1218451269
+      Data3: -1890553939
+      Data4: -339658366
+    Path: event:/MarvinMonkey
+  dialoguePeteEvent:
+    Guid:
+      Data1: -788340723
+      Data2: 1242775541
+      Data3: 256658618
+      Data4: 1259448988
+    Path: event:/PeteParrot
+  dialogueFelliniEvent:
+    Guid:
+      Data1: -1946565767
+      Data2: 1117680751
+      Data3: 1164123315
+      Data4: -854276493
+    Path: event:/FelliniVoices
   player: {fileID: 0}
   animator: {fileID: 0}

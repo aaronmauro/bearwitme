@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     private bool isIdleAnimation;
     private bool isfalling;
     private float facingCameraTimer;
+
     
     // Visual frame flip
     [SerializeField] private Transform visual;
@@ -91,6 +92,10 @@ public class Player : MonoBehaviour
     [SerializeField]
     private FMODUnity.EventReference playerJumpEvent; // add jump event reference
     private EventInstance walkEventInstance;
+    [SerializeField]
+    private FMODUnity.EventReference playerPushEvent;
+    private EventInstance pushEventInstance;
+    private bool pushAudioPlaying = false;
     private bool walkAudioPlaying = false;
     private bool fmodInitialized = false;
 
@@ -172,6 +177,16 @@ public class Player : MonoBehaviour
             fmodInitialized = false;
             walkAudioPlaying = false;
         }
+
+        // Stop & release FMOD instance
+        if (pushAudioPlaying)
+        {
+            pushEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            pushEventInstance.release();
+            fmodInitialized = false;
+            
+        }
+        pushAudioPlaying = false;
     }
 
     // Setting up values at start
@@ -200,6 +215,17 @@ public class Player : MonoBehaviour
         {
             Debug.LogWarning("FMOD: Failed to create/attach walk event instance. Check EventReference in inspector.");
             fmodInitialized = false;
+        }
+
+        // Initialize FMOD push event instance from EventReference
+        try
+        {
+            pushEventInstance = RuntimeManager.CreateInstance(playerPushEvent);
+            RuntimeManager.AttachInstanceToGameObject(pushEventInstance, transform, rb);
+        }
+        catch
+        {
+            Debug.LogWarning("FMOD: Failed to create/attach push event instance.");
         }
     }
 
@@ -451,6 +477,21 @@ public class Player : MonoBehaviour
             {
                 walkEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 walkAudioPlaying = false;
+            }
+        }
+        
+        // FMOD: pushing loop
+        if (fmodInitialized)
+        {
+            if (isPushingBox && isWalking && isGround && !pushAudioPlaying)
+            {
+                pushEventInstance.start();
+                pushAudioPlaying = true;
+            }
+            else if ((!isPushingBox || !isWalking || !isGround) && pushAudioPlaying)
+            {
+                pushEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                pushAudioPlaying = false;
             }
         }
     }

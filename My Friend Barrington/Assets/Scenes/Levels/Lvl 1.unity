@@ -60728,7 +60728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1729932240875000401, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 14.000336
+      value: 14.000366
       objectReference: {fileID: 0}
     - target: {fileID: 1984893049654365982, guid: 5dce800efc4d3564fa9524290acb434a, type: 3}
       propertyPath: m_IsActive
@@ -181765,6 +181765,10 @@ PrefabInstance:
       value: event:/PlayerSFX/Jump1
       objectReference: {fileID: 0}
     - target: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
+      propertyPath: playerPushEvent.Path
+      value: event:/PlayerSFX/Pushing
+      objectReference: {fileID: 0}
+    - target: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
       propertyPath: playerWalkEvent.Path
       value: event:/PlayerSFX/SoftFootsteps
       objectReference: {fileID: 0}
@@ -181783,6 +181787,22 @@ PrefabInstance:
     - target: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
       propertyPath: playerJumpEvent.Guid.Data4
       value: 516621440
+      objectReference: {fileID: 0}
+    - target: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
+      propertyPath: playerPushEvent.Guid.Data1
+      value: -1537251630
+      objectReference: {fileID: 0}
+    - target: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
+      propertyPath: playerPushEvent.Guid.Data2
+      value: 1288498291
+      objectReference: {fileID: 0}
+    - target: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
+      propertyPath: playerPushEvent.Guid.Data3
+      value: -1079049064
+      objectReference: {fileID: 0}
+    - target: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
+      propertyPath: playerPushEvent.Guid.Data4
+      value: -682505828
       objectReference: {fileID: 0}
     - target: {fileID: 965440331453837776, guid: 471c5b55a9b7fcf4abb62b94a43d8c31, type: 3}
       propertyPath: playerWalkEvent.Guid.Data1
