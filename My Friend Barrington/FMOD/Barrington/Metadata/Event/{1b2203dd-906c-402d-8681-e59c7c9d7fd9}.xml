@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{1b2203dd-906c-402d-8681-e59c7c9d7fd9}">
 		<property name="name">
-			<value>ParentsMuffledArguing</value>
+			<value>ParentsMuffledArguing1</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
