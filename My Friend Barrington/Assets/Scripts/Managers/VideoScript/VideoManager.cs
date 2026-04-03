@@ -110,13 +110,13 @@ public class VideoManager : MonoBehaviour
 
         checkVideoStatus();
 
-        if (InputManager.controlerUI)
-        {
-            changeText.text = "Press E";
-        }
-        else if (!InputManager.controlerUI) {
-            changeText.text = "Press X";
-        }
+        //if (InputManager.controlerUI)
+        //{
+           // changeText.text = "Press E";
+       // }
+       // else if (!InputManager.controlerUI) {
+            //changeText.text = "Press X";
+        //} seems to be causing problems right now with kbm 
     }
 
     public void playVideo(string videoName)
