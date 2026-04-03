@@ -52,8 +52,8 @@ public class VideoManager : MonoBehaviour
             AudioManager.instance.bgSFX.Stop();
         }
 
-        InputManager.GetInstance().submitAction.action.performed += ads2ControllerPressed;
-        InputManager.GetInstance().submitAction.action.Enable();
+       // InputManager.GetInstance().submitAction.action.performed += ads2ControllerPressed;
+       // InputManager.GetInstance().submitAction.action.Enable();
         // fmod - ensure the object name matches your hierarchy
         //GameObject fmodObj = GameObject.Find("FMODEvent");
         //if (fmodObj != null)
@@ -67,8 +67,8 @@ public class VideoManager : MonoBehaviour
 
     private void OnDisable()
     {
-        InputManager.GetInstance().submitAction.action.performed -= ads2ControllerPressed;
-        InputManager.GetInstance().submitAction.action.Disable();
+       // InputManager.GetInstance().submitAction.action.performed -= ads2ControllerPressed;
+       // InputManager.GetInstance().submitAction.action.Disable();
     }
     void Start()
     {
@@ -110,13 +110,13 @@ public class VideoManager : MonoBehaviour
 
         checkVideoStatus();
 
-        if (InputManager.controlerUI)
-        {
-            changeText.text = "Press E";
-        }
-        else if (!InputManager.controlerUI) {
-            changeText.text = "Press X";
-        }
+       // if (InputManager.controlerUI)
+        //{
+       //     changeText.text = "Press E";
+       // }
+       // else if (!InputManager.controlerUI) {
+        //    changeText.text = "Press X";
+       // }
     }
 
     public void playVideo(string videoName)
