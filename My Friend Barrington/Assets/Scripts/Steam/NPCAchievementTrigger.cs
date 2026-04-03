@@ -1,10 +1,11 @@
 using UnityEngine;
+#if !DISABLESTEAMWORKS
 using Steamworks;
+#endif
 
 public class NPCAchievementTrigger : MonoBehaviour
 {
     [SerializeField] private string achievementID = "NPCM";
-
     private bool unlocked = false;
 
     private void OnTriggerEnter(Collider other)
@@ -13,8 +14,10 @@ public class NPCAchievementTrigger : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+#if !DISABLESTEAMWORKS
             SteamAchievementManager.UnlockAchievement(achievementID);
-            unlocked = true; // Prevents triggering again this session
+#endif
+            unlocked = true;
         }
     }
 }

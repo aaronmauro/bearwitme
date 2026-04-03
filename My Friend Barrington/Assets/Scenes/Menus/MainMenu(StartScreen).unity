@@ -124,6 +124,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4361865954667486621, guid: 5784d18375557d845811948decf9fa6e, type: 3}
   m_PrefabInstance: {fileID: 3598556968558098924}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &322236239 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3485412614664952591, guid: 91c6e81fce46be546bed7bcae9448bf7, type: 3}
+  m_PrefabInstance: {fileID: 1110582572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &381061770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -726,7 +731,7 @@ PrefabInstance:
     - target: {fileID: 4819485401172098060, guid: 91c6e81fce46be546bed7bcae9448bf7, type: 3}
       propertyPath: borderCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 322236239}
     - target: {fileID: 4819485401172098060, guid: 91c6e81fce46be546bed7bcae9448bf7, type: 3}
       propertyPath: backGroundAudio
       value: 
