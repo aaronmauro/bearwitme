@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(PlayerInput)), DefaultExecutionOrder(-1)]
 public class InputManager : MonoBehaviour
@@ -33,6 +34,7 @@ public class InputManager : MonoBehaviour
 
     // cached PlayerInput component on this persistent object
     private PlayerInput playerInputComponent;
+    public static bool controlerUI;
 
     // keep a reference to the controls-changed handler so we can unsubscribe
     private System.Action controlsChangedHandler;
@@ -104,6 +106,7 @@ public class InputManager : MonoBehaviour
     {
         // Treat exactly "Keyboard&Mouse" as mouse/keyboard usage (matches Player.OnControlsChanged)
         bool usingKeyboardMouse = currentScheme == "Keyboard&Mouse";
+        InputManager.controlerUI = usingKeyboardMouse; // if ture keyboard and mouse, if false controller ui
         bool usingController = !usingKeyboardMouse;
 
         // Hide cursor and lock when using controller; show and unlock for keyboard & mouse
@@ -114,11 +117,11 @@ public class InputManager : MonoBehaviour
         FirstSelectedButtonController.isController = usingController;
 
         // Notify player(s) so they can update UI for control scheme
-        var players = FindObjectsOfType<Player>();
-        foreach (var p in players)
-        {
-            p.OnControlsChanged();
-        }
+     //   var players = FindObjectsOfType<Player>();
+      //  foreach (var p in players)
+      //  {
+      //      p.OnControlsChanged();
+       // }
     }
 
     public static InputManager GetInstance()

@@ -1,12 +1,13 @@
+using FMODUnity;
+using Ink.Runtime;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using Ink.Runtime;
+using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
-
+using UnityEngine.UI;
+using FMODUnity;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] public TextMeshProUGUI dialogueName;
     [SerializeField] public Image dialogueImage;
+    [SerializeField] public Image dialogueBox;
 
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
@@ -26,6 +28,13 @@ public class DialogueManager : MonoBehaviour
     [Header("Typewriter Effect")]
     [SerializeField] private float typingSpeed = 0.04f; // Time between each character
     [SerializeField] private bool canSkipTyping = true; // Allow players to skip typing animation
+
+    [Header("Audio (FMOD)")]
+    [SerializeField] private EventReference dialogueFelliniEvent;
+
+    /*[Header("Audio (FMOD)")]
+    [SerializeField]
+    private FMODUnity.EventReference dialogueFelliniEvent; // use EventReference instead of string*/
 
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
@@ -241,6 +250,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator TypeText(string text)
     {
+        RuntimeManager.PlayOneShotAttached(dialogueFelliniEvent, gameObject);
         isTyping = true;
         dialogueText.text = "";
 
@@ -262,6 +272,7 @@ public class DialogueManager : MonoBehaviour
 
         // After typing is complete, display choices or continue button
         DisplayChoices();
+       
     }
 
     private void SkipTyping()
@@ -442,10 +453,11 @@ public class DialogueManager : MonoBehaviour
         isProcessingChoice = false;
     }
 
-    public void UpdateNpc(string npcName, Sprite npcImage)
+    public void UpdateNpc(string npcName, Sprite npcImage, Sprite npcDialogueBox)
     {
         dialogueName.SetText(npcName);
         dialogueImage.sprite = npcImage;
+        dialogueBox.sprite = npcDialogueBox;
     }
 
     private void HandleTags(List<string> currentTags)
@@ -493,6 +505,17 @@ public class DialogueManager : MonoBehaviour
             }
 
             // Add other tag handlers here (e.g. 'name', 'portrait', etc.)
+            // thank you! i think i will - DV
+            else if (key == "stickyGive")
+            {
+                Debug.Log("why");
+                Debug.Log(animator);
+                animator.gameObject.transform.GetChild(0).gameObject.GetComponent<stickyGetHandler>().StickyGive();
+            }
+            else if (key == "stickyGet")
+            {
+                animator.gameObject.transform.GetChild(0).gameObject.GetComponent<stickyGetHandler>().StickyGet();
+            }
         }
     }
 }

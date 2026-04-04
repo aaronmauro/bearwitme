@@ -1,4 +1,5 @@
 using UnityEngine;
+using FMODUnity;
 
 public class BreakingBlock : MonoBehaviour
 {
@@ -6,6 +7,21 @@ public class BreakingBlock : MonoBehaviour
     //public string playerTag = "Player";
     public float respawnDelay = 2f;
     public float destroyDelay = 0.75f;
+
+    // Animator
+    [SerializeField]
+    private Animator anim;
+    [SerializeField]
+    private Renderer[] r;
+
+    [Header("Audio (FMOD)")]
+    [SerializeField] private EventReference crayonBreakEvent;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        r = GetComponentsInChildren<Renderer>();
+    }
     /*private void OnCollisionEnter(Collision collision)
     {
         // Check if the colliding object has the player tag
@@ -22,6 +38,8 @@ public class BreakingBlock : MonoBehaviour
         // Check if the colliding object has the player tag
         if (other.gameObject.isPlayer())
         {
+            anim.SetTrigger("Break");
+            RuntimeManager.PlayOneShotAttached(crayonBreakEvent, gameObject);
             Invoke(nameof(Delay), destroyDelay);
 
             Invoke(nameof(Reactivate), respawnDelay);
@@ -30,10 +48,26 @@ public class BreakingBlock : MonoBehaviour
 
     private void Reactivate()
     {
-        gameObject.SetActive(true);
+        //gameObject.SetActive(true); this will turn off code
+        foreach (Collider c in GetComponents<Collider>())
+        {
+            c.enabled = true;
+        }
+        foreach (Renderer ren in r)
+        {
+            ren.enabled = true;
+        }
     }
     private void Delay()
     {
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        foreach (Collider c in GetComponents<Collider>())
+        {
+            c.enabled = false;
+        }
+        foreach (Renderer ren in r)
+        {
+            ren.enabled = false;
+        }
     }
 }
