@@ -415,7 +415,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &45452191
 MonoBehaviour:
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Credits
+  m_text: Special Thanks & Resources
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
   m_sharedMaterial: {fileID: -8322860723942678991, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
@@ -464,8 +464,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1007,11 +1007,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ryan Bokla\t\t\tProducer, Actor\n\nGerald Ananaba\t\t\t\t\tArt\r\nTanisha
-    Bhayani\t\t\t\t\tArt\r\nKieran Cassar\t\t\tVideo, Actor, Audio\r\nFahd Gebi\t\t\t\t\tArt\r\nAlexander
-    Grajales\t\tArt, Game Design\r\nLeah Harvey\t\tNarrative Lead, Actor, Audio\r\nEric
-    Huang\t\tProgramming Lead, Art\r\nUzochi Ifemenam\t\tMarketing Lead\r\nAmelia
-    Leppek\t\t\t\tArt Lead\r\n\nAgusia Krzywinska\t\t\tSupervisor"
+  m_text: "Brelana Hill\tChild and Youth Studies Consultant\nKendra Yee \t\tHonorary
+    Tough Cookie\n\nAndres Coimbra Casdelo\t\tGDD Reviewer\nZach Heil\t\t\tGDD Reviewer\nJamie
+    Hurcomb\t\t\tGDD Reviewer\n\n\nSome SFX from\t\t\t\t\t\nFreesound.org\t\t\t\t\t\nSound
+    Cloud\t\t\t\t\t\nSony Picture Sound Effects\t\t\t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
   m_sharedMaterial: {fileID: -8322860723942678991, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
@@ -2513,13 +2512,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4137279813199881579, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Credits2Menu
-      objectReference: {fileID: 0}
     - target: {fileID: 4476266478564575350, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
       propertyPath: m_Name
       value: NextCredits
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476266478564575350, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5966248899690064464, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
       propertyPath: m_text
@@ -2925,7 +2924,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -4}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &567164889
@@ -4728,11 +4727,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Andre Montrichard\tProducer, QA Lead, Actor\n\nTyler De Las Llagas\tGame
-    Design Lead, Actor\r\r\nSadie Nguyen\t\tArt Lead, Game Design\r\nNoah Parfett\t\t\tProgramming\r\nBrandon
-    Patel\t\t\tMarketing, Art\r\nHiten Patel\t\t\tProgramming\r\nDonna Marie Phelps
-    \tAudio Lead, Narrative\r\nSummer Tibando\t\t\t\tMarketing\r\nDaniel Vidberg\t\tGame
-    Design, Narrative\r\nGarrett Wager\t\t\tVideo Lead, Art\r\n\nAaron Mauro\t\t\t\tSupervisor"
+  m_text: "Omar Nori\t\tHonorary Tough Cookie\nAaron Leblanc \t\tHonorary Tough Cookie\n\nDylan
+    Pineo\t\t\tGDD Reviewer\nRobyn Simpson\t\t\tGDD Reviewer\nJD Veilleux\t\t\tGDD
+    Reviewer"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
   m_sharedMaterial: {fileID: -8322860723942678991, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
@@ -5613,13 +5610,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4137279813199881579, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Credits2Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 4476266478564575350, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
       propertyPath: m_Name
       value: PrevCredits
-      objectReference: {fileID: 0}
-    - target: {fileID: 4476266478564575350, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5966248899690064464, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
       propertyPath: m_text

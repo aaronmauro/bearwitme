@@ -124,6 +124,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4361865954667486621, guid: 5784d18375557d845811948decf9fa6e, type: 3}
   m_PrefabInstance: {fileID: 3598556968558098924}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &322236239 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3485412614664952591, guid: 91c6e81fce46be546bed7bcae9448bf7, type: 3}
+  m_PrefabInstance: {fileID: 1110582572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &381061770
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -695,11 +700,6 @@ MonoBehaviour:
   - {fileID: 900170676764990455, guid: b2a458cbd40d09a4c94b77170983c88c, type: 3}
   - {fileID: 2730313945668862966, guid: 1757537ece51c76459e35cd01c802ca8, type: 3}
   - {fileID: 567738749378138079, guid: 771077e97b955ff40a621888d30c34e9, type: 3}
---- !u!20 &955353404 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 3485412614664952591, guid: 91c6e81fce46be546bed7bcae9448bf7, type: 3}
-  m_PrefabInstance: {fileID: 1110582572}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &968976934 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 593321224498430409, guid: 6a9d1569ff68d7f40a99616545f332e4, type: 3}
@@ -731,7 +731,7 @@ PrefabInstance:
     - target: {fileID: 4819485401172098060, guid: 91c6e81fce46be546bed7bcae9448bf7, type: 3}
       propertyPath: borderCamera
       value: 
-      objectReference: {fileID: 955353404}
+      objectReference: {fileID: 322236239}
     - target: {fileID: 4819485401172098060, guid: 91c6e81fce46be546bed7bcae9448bf7, type: 3}
       propertyPath: backGroundAudio
       value: 
