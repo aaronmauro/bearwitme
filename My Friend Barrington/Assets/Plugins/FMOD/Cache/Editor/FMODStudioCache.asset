@@ -41,19 +41,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/BeachWaveCrashing
   Guid:
-    Data1: 1893946454
-    Data2: 1086845193
-    Data3: 621762688
-    Data4: -986047194
+    Data1: 2044474378
+    Data2: 1271556279
+    Data3: 921701264
+    Data4: 1542859767
   Banks:
   - {fileID: 4196543210511341658}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 60195
 --- !u!114 &-8929230132943412663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,6 +513,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 57508
+--- !u!114 &-5701511487138310837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ForestAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/ForestAmbience
+  Guid:
+    Data1: 2051213742
+    Data2: 1089833678
+    Data3: -1718998613
+    Data4: -1521071365
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200160
 --- !u!114 &-5643518011031149676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,7 +1275,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639107345540743589
+  lastModified: 639109025096584181
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1320,10 +1347,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639107345540756173
+  lastModified: 639109025096604126
   FileSizes:
   - Name: 
-    Value: 5042
+    Value: 5130
   Exists: 1
 --- !u!114 &-273425419323144221
 MonoBehaviour:
@@ -1484,13 +1511,15 @@ MonoBehaviour:
   - {fileID: -7218173690600723810}
   - {fileID: 4003437984083138798}
   - {fileID: -205903646520281575}
+  - {fileID: 5539192203051078407}
+  - {fileID: -5701511487138310837}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1556990543963516638}
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639107353081351923
+  cacheTime: 639109036655865745
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -1662,6 +1691,10 @@ MonoBehaviour:
     index: 83
   - key: event:/PlayerSFX/Pushing
     index: 84
+  - key: event:/CloudsAmbience
+    index: 85
+  - key: event:/ForestAmbience
+    index: 86
 --- !u!114 &2424733617150124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2181,7 +2214,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639107353081351923
+  lastModified: 639109036655865745
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2319,6 +2352,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 49560
+--- !u!114 &5539192203051078407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CloudsAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/CloudsAmbience
+  Guid:
+    Data1: 1727995796
+    Data2: 1107051172
+    Data3: -229274450
+    Data4: -186317657
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42560
 --- !u!114 &5882646011552939837
 MonoBehaviour:
   m_ObjectHideFlags: 0
