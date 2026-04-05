@@ -6,7 +6,9 @@ Barrington! There you are. I got a little lost and didn’t know what to do!
 
 Are you okay? You’re missing a bunch of your stuffing…
 
-Barrington, you feel like my closest friend in the world! I’m very lucky to have you. Do you have someone that makes you feel like that? I’ve relied on you so much, sometimes you need to rely on someone else to help you out of a sticky situation!
+Barrington, you feel like my closest friend in the world! I’m very lucky to have you. 
+
+I’ve relied on you so much, sometimes you need to rely on someone else to help you out of a sticky situation!
 
 I can be the start of that! I found a piece of a ship! Just like Pete’s. You’re trying to build one, right? Take it!
 
