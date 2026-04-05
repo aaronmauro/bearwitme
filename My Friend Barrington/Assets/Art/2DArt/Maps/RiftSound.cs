@@ -19,6 +19,7 @@ public class RiftSound : MonoBehaviour
         CRT = new Material(CRT);
         CRT.SetFloat(intensityProperty, 0f);
         riftShader.passMaterial = CRT;
+        audioSource.loop = true;
         audioSource.volume = 0f;
     }
 
@@ -43,10 +44,13 @@ public class RiftSound : MonoBehaviour
         _fadeCoroutine = StartCoroutine(FadeOut());
     }
 
-    private IEnumerator FadeIn()
+   private IEnumerator FadeIn()
     {
         audioSource.volume = 0f;
-        audioSource.Play();
+
+        if (!audioSource.isPlaying)
+            audioSource.Play();
+
         yield return StartCoroutine(Fade(0f, 1f, fadeInDuration, removeOnComplete: false));
     }
 
