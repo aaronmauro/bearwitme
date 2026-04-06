@@ -20,7 +20,7 @@ public class ChangeIndicatorByControl : MonoBehaviour
     void FixedUpdate()
     {
         ChangeIndicator();
-        Debug.Log(!InputManager.controlerUI);
+        //Debug.Log(InputManager.controlerUI);
     }
 
     public void ChangeIndicator()
@@ -30,9 +30,9 @@ public class ChangeIndicatorByControl : MonoBehaviour
         //controlerActive = !InputManager.controlerUI;
         currentSprite.sprite = materialType switch
         {
-            pickSprite.lever => !InputManager.controlerUI ? indicators[0] : indicators[1],
-            pickSprite.grapple => !InputManager.controlerUI ? indicators[2] : indicators[3],
-            pickSprite.dialouge => !InputManager.controlerUI ? indicators[4] : indicators[5],
+            pickSprite.lever => InputManager.controlerUI ? indicators[0] : indicators[1],
+            pickSprite.grapple => InputManager.controlerUI ? indicators[2] : indicators[3],
+            pickSprite.dialouge => InputManager.controlerUI ? indicators[4] : indicators[5],
             _ => currentSprite.sprite
         };
     }
