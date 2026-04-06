@@ -245,49 +245,45 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Invoke all normal player actions
+        // ALWAYS handle platform movement first
+        if (isGround && currentPlatform != null)
+        {
+            Vector3 platformDelta = currentPlatform.transform.position - lastPlatformPosition;
+
+            Vector3 targetPos = transform.position + new Vector3(platformDelta.x, 0f, platformDelta.z);
+            transform.position = Vector3.Lerp(transform.position, targetPos, 1.5f);
+
+            lastPlatformPosition = currentPlatform.transform.position;
+        }
+
+        // If no input allowed, skip player controls BUT keep platform movement
         if (!playerInput || dialogue)
         {
-            //freezePlayer(true); // this breaks the player death. not sure why its here, talk to me if its loadbearing - DV
             if (waitingToTeleport)
             {
-                transform.position = waitingToTeleportTarget; // trying to teleport the player between fixedupdate frames causes weirdness, hence this - DV
+                transform.position = waitingToTeleportTarget;
                 waitingToTeleport = false;
             }
+
             if (stunTimer > 0)
             {
                 stunTimer -= Time.fixedDeltaTime;
-                if (stunTimer <= 0) {
+                if (stunTimer <= 0)
+                {
                     anim.SetBool("PlayerStun", false);
                     playerInput = true;
                 }
             }
+
             return;
         }
-        else
-        {
-            InputManager.GetInstance().playerAction?.Invoke();
-        }
 
-
-
-        if (isGround && currentPlatform != null)
-        {
-            // Calculate the platform movement since last frame
-            Vector3 platformDelta = currentPlatform.transform.position - lastPlatformPosition;
-
-            // Smoothly apply horizontal motion to the player
-            Vector3 targetPos = transform.position + new Vector3(platformDelta.x, 0f, platformDelta.z);
-            transform.position = Vector3.Lerp(transform.position, targetPos, 1.5f);
-
-            // Update last platform position
-            lastPlatformPosition = currentPlatform.transform.position;
-        }
-
+        // Normal player logic
+        InputManager.GetInstance().playerAction?.Invoke();
     }
 
     // Apply normal player input
-    
+
     //Debug.Log(coyoteTimeCounter);
     //Debug.Log(coyoteTime);
 

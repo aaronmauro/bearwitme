@@ -13,7 +13,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     public float switchDistance = 0.05f;
 
     [SerializeField] bool stopAtEnd = false;
-
+    [SerializeField] private bool isEndPlatform = false;
     public Vector3 PlatformDelta { get; private set; }
 
     void Start()
@@ -52,7 +52,27 @@ public class NewMonoBehaviourScript : MonoBehaviour
             currentTarget = (currentTarget == targetA) ? targetB : targetA;
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!isEndPlatform) return;
 
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Player player = collision.gameObject.GetComponent<Player>();
+
+            if (player != null)
+            {
+                player.freezePlayer(true);
+
+                Rigidbody playerRb = collision.gameObject.GetComponent<Rigidbody>();
+                if (playerRb != null)
+                {
+                    // Keep vertical velocity (so platform / gravity still works)
+                    playerRb.linearVelocity = new Vector3(0f, playerRb.linearVelocity.y, 0f);
+                }
+            }
+        }
+    }
 
     private void OnDrawGizmos()
     {
