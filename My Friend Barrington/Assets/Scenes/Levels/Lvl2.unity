@@ -124125,7 +124125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventPlayTrigger
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventStopTrigger
@@ -124198,6 +124198,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1138611756928285238, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1673052285}
+    - targetCorrespondingSourceObject: {fileID: 1138611756928285238, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1673052287}
   m_SourcePrefab: {fileID: 100100000, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
 --- !u!4 &1673052283 stripped
 Transform:
@@ -124230,6 +124233,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 164.6, y: 59.47, z: 9.8}
   m_Center: {x: 0, y: -4.2, z: 0}
+--- !u!114 &1673052287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673052284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2559028b424f9bf4cb136e48eb8ea0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioEmitter: {fileID: 0}
 --- !u!1 &1673173400
 GameObject:
   m_ObjectHideFlags: 0
