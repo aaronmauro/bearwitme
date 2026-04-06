@@ -148485,6 +148485,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: R_Sign_Controller (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2206942176065424192, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2206942176065424192, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.09
+      objectReference: {fileID: 0}
     - target: {fileID: 3532973195442199980, guid: dc402ef4fc1a0d64ba4e29d78fad2f90, type: 3}
       propertyPath: m_LocalPosition.x
       value: 94.85
