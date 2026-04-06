@@ -1009,27 +1009,31 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Featuring the voices of
 
+    Leah Harvey as Fellini and Angry Parent
+
+    Tyler
+    De Las Llagas as Marvin
+
+    Amelia Leppek as Angry Parent
+
     Sadie Nguyen
+    as Jordan and Marvin
 
-    Daniel Vidberg
+    Daniel Vidberg as Parrot Pete
 
-    Leah
-    Harvey
-
-    Amelia Leppek
-
-    Garrett Wager
+    Garrett Wager as
+    Barrington Bear
 
 
     Foley and Mixing by
 
-    Donna
-    Phelps
+    Donna Phelps
 
 
     Composing by
 
-    Leah Harvey
+    Leah
+    Harvey
 
 
 '
@@ -4749,7 +4753,33 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 'Featuring the acting of
+
+    Ryan Bokla as Mr. Sticky
+
+    Andre Montrichard
+    as Goon 1
+
+    Kieran Cassar as Goon 2
+
+    Tyler De Las Llagas as Goon 3
+
+
+    Leah
+    Harvey as Singer
+
+    Tyler De Las Llagas as Guitarist
+
+    Kieran Cassar as
+    Bassist
+
+    Daniel Vidberg as Drummer
+
+
+    Garrett Wager as Puppeteer 1
+
+    Tyler
+    De Las Llagas as Puppeteer 2'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
   m_sharedMaterial: {fileID: -8322860723942678991, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
@@ -4776,14 +4806,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 16
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0

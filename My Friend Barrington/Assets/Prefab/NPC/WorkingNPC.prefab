@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4599784026380354865}
   - component: {fileID: 8625359115867934686}
+  - component: {fileID: 6406258564352968810}
   m_Layer: 0
   m_Name: DialogueIndicator
   m_TagString: Untagged
@@ -87,6 +88,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6406258564352968810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3582668705550440180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db537b61c3f6f74a9032c1309a6a238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicators:
+  - {fileID: 21300000, guid: 7591650c722aad84983e8473f796b453, type: 3}
+  - {fileID: 21300000, guid: d8fe1ba2181bbb24da764fe09b46d5f5, type: 3}
+  - {fileID: 21300000, guid: 253c333b74313374b93b676073fa1bec, type: 3}
+  - {fileID: 21300000, guid: 27b8ec9b3e136d643878cfd581464626, type: 3}
+  - {fileID: 21300000, guid: e4908cecc2e77784abad32981e717599, type: 3}
+  - {fileID: 21300000, guid: c7e1fd35676cac44aa3078d4a2e52772, type: 3}
+  currentSprite: {fileID: 0}
+  materialType: 2
+  controlerActive: 0
 --- !u!1001 &129947541257969817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,6 +254,8 @@ MonoBehaviour:
   inkJSON: {fileID: 4900000, guid: 0265fa8a468585044b3ded9f8fab0ac6, type: 3}
   npcName: 
   npcImage: {fileID: 0}
+  npcDialogueBox: {fileID: 0}
+  rifts: []
 --- !u!95 &8232914075637772017
 Animator:
   serializedVersion: 7

@@ -14,4 +14,14 @@ public class ParticleCollision : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!other.gameObject.isPlayer()) return;
+        
+        if (particles != null)
+        {
+            particles.Play();
+        }
+    }
 }

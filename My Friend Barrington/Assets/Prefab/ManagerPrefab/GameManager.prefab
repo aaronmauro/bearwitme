@@ -63,6 +63,13 @@ MonoBehaviour:
   borderCamera: {fileID: 3485412614664952591}
   EndOfLevel: {fileID: 0}
   DebugTeleport: {fileID: 0}
+  deathSoundEvent:
+    Guid:
+      Data1: 2096843622
+      Data2: 1323130315
+      Data3: -828834381
+      Data4: 366143021
+    Path: event:/PlayerSFX/BarringtonRespawn2
 --- !u!1001 &6779508048995964886
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -297,6 +297,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 86749
+--- !u!114 &-7211790608732685254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/StickyHand
+  m_EditorClassIdentifier: 
+  Path: event:/StickyHand
+  Guid:
+    Data1: -1097664762
+    Data2: 1309129918
+    Data3: -1478386546
+    Data4: 1249621251
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7019486187128859815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,7 +744,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Barrington.bank
   Name: Barrington
   StudioPath: bank:/Barrington
-  lastModified: 639110217229574649
+  lastModified: 639110836741602608
   FileSizes: []
   Exists: 1
 --- !u!114 &-4570363228950454038
@@ -1044,6 +1071,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 62352
+--- !u!114 &-2448262890847850369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/RiftEnter
+  m_EditorClassIdentifier: 
+  Path: event:/RiftEnter
+  Guid:
+    Data1: -996544988
+    Data2: 1166839725
+    Data3: -1579909478
+    Data4: -1341189642
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2444265544869073790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,7 +1248,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639110684225985173
+  lastModified: 639110836742249420
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1266,10 +1320,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639110684225985173
+  lastModified: 639110836742264438
   FileSizes:
   - Name: 
-    Value: 5042
+    Value: 5226
   Exists: 1
 --- !u!114 &-273425419323144221
 MonoBehaviour:
@@ -1430,13 +1484,17 @@ MonoBehaviour:
   - {fileID: 8170299689257628662}
   - {fileID: 8265976516329890405}
   - {fileID: 9097650213656185184}
+  - {fileID: 8131050279638446580}
+  - {fileID: -7211790608732685254}
+  - {fileID: -2448262890847850369}
+  - {fileID: 8469148538250801796}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1556990543963516638}
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639110684226719528
+  cacheTime: 639110882112156064
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -1608,6 +1666,14 @@ MonoBehaviour:
     index: 83
   - key: event:/StickyHand_2
     index: 84
+  - key: event:/PlayerSFX/BarringtonRespawn2
+    index: 85
+  - key: event:/StickyHand
+    index: 86
+  - key: event:/RiftEnter
+    index: 87
+  - key: event:/RiftCloser
+    index: 88
 --- !u!114 &2424733617150124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2028,7 +2094,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Video.bank
   Name: Video
   StudioPath: bank:/Video
-  lastModified: 639110217230716724
+  lastModified: 639110836746125222
   FileSizes: []
   Exists: 1
 --- !u!114 &3299143982751840017
@@ -2127,7 +2193,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639110684226719528
+  lastModified: 639110836745282174
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2469,7 +2535,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/LevelSoundTracks.bank
   Name: LevelSoundTracks
   StudioPath: bank:/LevelSoundTracks
-  lastModified: 639110217229781457
+  lastModified: 639110882112156064
   FileSizes: []
   Exists: 1
 --- !u!114 &7980816308397880968
@@ -2493,6 +2559,33 @@ MonoBehaviour:
   Banks:
   - {fileID: 4196543210511341658}
   IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8131050279638446580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/BarringtonRespawn2
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/BarringtonRespawn2
+  Guid:
+    Data1: 2096843622
+    Data2: 1323130315
+    Data3: -828834381
+    Data4: 366143021
+  Banks:
+  - {fileID: -4602078392209194838}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -2571,6 +2664,33 @@ MonoBehaviour:
     Data2: 1188422519
     Data3: 414018688
     Data4: -441673861
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8469148538250801796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/RiftCloser
+  m_EditorClassIdentifier: 
+  Path: event:/RiftCloser
+  Guid:
+    Data1: 349150961
+    Data2: 1335233311
+    Data3: 431477685
+    Data4: -1128676766
   Banks:
   - {fileID: 4196543210511341658}
   IsStream: 0

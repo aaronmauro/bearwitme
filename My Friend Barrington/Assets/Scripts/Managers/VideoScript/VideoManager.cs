@@ -6,6 +6,7 @@ using FMODUnity;
 using FMOD.Studio;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UI;
 
 public class VideoManager : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class VideoManager : MonoBehaviour
 
     [SerializeField] private GameObject remoteImage;
     [SerializeField] private GameObject texts;
-    private TextMeshPro changeText;
+    [SerializeField] private TextMeshProUGUI changeText;
     //private StudioEventEmitter fmodEventEmitter;
 
     [Header("Component")]
@@ -51,9 +52,9 @@ public class VideoManager : MonoBehaviour
         {
             AudioManager.instance.bgSFX.Stop();
         }
-
-       // InputManager.GetInstance().submitAction.action.performed += ads2ControllerPressed;
-       // InputManager.GetInstance().submitAction.action.Enable();
+        changeText = texts.GetComponent<TextMeshProUGUI>();
+        InputManager.GetInstance().submitAction.action.performed += ads2ControllerPressed;
+        InputManager.GetInstance().submitAction.action.Enable();
         // fmod - ensure the object name matches your hierarchy
         //GameObject fmodObj = GameObject.Find("FMODEvent");
         //if (fmodObj != null)
@@ -67,8 +68,8 @@ public class VideoManager : MonoBehaviour
 
     private void OnDisable()
     {
-       // InputManager.GetInstance().submitAction.action.performed -= ads2ControllerPressed;
-       // InputManager.GetInstance().submitAction.action.Disable();
+        InputManager.GetInstance().submitAction.action.performed -= ads2ControllerPressed;
+        InputManager.GetInstance().submitAction.action.Disable();
     }
     void Start()
     {
@@ -110,13 +111,13 @@ public class VideoManager : MonoBehaviour
 
         checkVideoStatus();
 
-       // if (InputManager.controlerUI)
+        // if (InputManager.controlerUI)
         //{
-       //     changeText.text = "Press E";
-       // }
-       // else if (!InputManager.controlerUI) {
+        //     changeText.text = "Press E";
+        // }
+        // else if (!InputManager.controlerUI) {
         //    changeText.text = "Press X";
-       // }
+        // }
     }
 
     public void playVideo(string videoName)
@@ -175,6 +176,7 @@ public class VideoManager : MonoBehaviour
                 if (adsNumber == 1)
                 {
                     texts.SetActive(true);
+                    changeText.text = InputManager.controlerUI ? "Press X" : "Press E";
                 }
                 if (_v.isSmashingButton) isPauseVideo = true;
             }
