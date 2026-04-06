@@ -102,6 +102,7 @@ public class DialogueTrigger : MonoBehaviour
             if (rift != null)
             {
                 rift.SetActive(true);
+                
             }
         }
     }

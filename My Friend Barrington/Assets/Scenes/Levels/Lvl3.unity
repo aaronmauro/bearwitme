@@ -85944,7 +85944,7 @@ PrefabInstance:
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: tpAnimation
       value: 
-      objectReference: {fileID: 458242629}
+      objectReference: {fileID: 0}
     - target: {fileID: 6019086795099810668, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Path
       value: event:/RiftEnter 2

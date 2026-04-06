@@ -19,7 +19,7 @@ public class Rift : MonoBehaviour
     [SerializeField] private bool hideSpawn = false;
     [SerializeField] private float triggerDistance = 2f;
 
-    [SerializeField] private GameObject tpAnimation;
+    [SerializeField] public GameObject tpAnimation;
     [SerializeField] private VideoPlayer tpVideoPlay;
 
     public bool isTp;
@@ -31,6 +31,7 @@ public class Rift : MonoBehaviour
 
     private void Awake()
     {
+        if (tpAnimation != null) return;
         tpAnimation = GameObject.Find("tpAnimation");
         tpVideoPlay = GameObject.Find("tpVideo").gameObject.GetComponent<VideoPlayer>();
     }
@@ -97,7 +98,8 @@ public class Rift : MonoBehaviour
 
     private IEnumerator playTpVideo()
     {
-        Debug.Log("player");
+        //Debug.Log("player");
+        //tpAnimation = GameObject.Find("tpAnimation");
         tpAnimation.SetActive(true);
         tpVideoPlay.Play();
         yield return new WaitForSeconds(2f);
