@@ -70,8 +70,8 @@ public class GameManager : MonoBehaviour
         }
             windowaspect = (float)Screen.width / Screen.height; // Window Size
         scaleHeight = windowaspect / targetaspect; // calculate current viewport
-        
-        if (scaleHeight < 1.0f)
+
+/*        if (scaleHeight < 1.0f)
         {
             Rect rect = mainCamera.rect;
             rect.width = 1.0f;
@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
             rect.x = (1.0f - scalewidth) / 2.0f;
             rect.y = 0;
             mainCamera.rect = rect;
-        }
+        }*/
     }
 
     private void OnEnable()
