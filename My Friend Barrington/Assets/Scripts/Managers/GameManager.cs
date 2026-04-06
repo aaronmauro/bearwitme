@@ -52,6 +52,9 @@ public class GameManager : MonoBehaviour
     Transform EndOfLevel;
     [SerializeField] Transform DebugTeleport;
 
+    [Header("Audio (FMOD)")]
+    [SerializeField] private EventReference deathSoundEvent;
+
     private void Awake()
     {
         // Application frame rate
@@ -70,8 +73,8 @@ public class GameManager : MonoBehaviour
         }
             windowaspect = (float)Screen.width / Screen.height; // Window Size
         scaleHeight = windowaspect / targetaspect; // calculate current viewport
-        
-        if (scaleHeight < 1.0f)
+
+/*        if (scaleHeight < 1.0f)
         {
             Rect rect = mainCamera.rect;
             rect.width = 1.0f;
@@ -89,7 +92,7 @@ public class GameManager : MonoBehaviour
             rect.x = (1.0f - scalewidth) / 2.0f;
             rect.y = 0;
             mainCamera.rect = rect;
-        }
+        }*/
     }
 
     private void OnEnable()
@@ -156,6 +159,7 @@ public class GameManager : MonoBehaviour
             //Debug.Log("heavy is dead!!");
             player.freezePlayer(true);
             anim.SetTrigger("PlayerDeath");
+            RuntimeManager.PlayOneShotAttached(deathSoundEvent, gameObject);
             StartCoroutine(RespawnDelay1(1f));
         }
 
