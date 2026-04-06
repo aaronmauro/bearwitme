@@ -106,8 +106,9 @@ public class InputManager : MonoBehaviour
     {
         // Treat exactly "Keyboard&Mouse" as mouse/keyboard usage (matches Player.OnControlsChanged)
         bool usingKeyboardMouse = currentScheme == "Keyboard&Mouse";
-        InputManager.controlerUI = usingKeyboardMouse; // if ture keyboard and mouse, if false controller ui
         bool usingController = !usingKeyboardMouse;
+        InputManager.controlerUI = usingController; // if ture keyboard and mouse, if false controller ui
+        Debug.Log(usingController);
 
         // Hide cursor and lock when using controller; show and unlock for keyboard & mouse
         Cursor.visible = usingKeyboardMouse;

@@ -32942,6 +32942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 460472229}
   - component: {fileID: 460472228}
+  - component: {fileID: 460472230}
   m_Layer: 0
   m_Name: LeverIndicator
   m_TagString: Untagged
@@ -33019,6 +33020,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 45.352, z: 0}
+--- !u!114 &460472230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460472227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db537b61c3f6f74a9032c1309a6a238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicators:
+  - {fileID: 21300000, guid: 7591650c722aad84983e8473f796b453, type: 3}
+  - {fileID: 21300000, guid: d8fe1ba2181bbb24da764fe09b46d5f5, type: 3}
+  - {fileID: 21300000, guid: 253c333b74313374b93b676073fa1bec, type: 3}
+  - {fileID: 21300000, guid: 27b8ec9b3e136d643878cfd581464626, type: 3}
+  - {fileID: 21300000, guid: e4908cecc2e77784abad32981e717599, type: 3}
+  - {fileID: 21300000, guid: c7e1fd35676cac44aa3078d4a2e52772, type: 3}
+  currentSprite: {fileID: 0}
+  materialType: 0
+  controlerActive: 0
 --- !u!1001 &461759532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71752,6 +71775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918115706}
   - component: {fileID: 918115705}
+  - component: {fileID: 918115707}
   m_Layer: 0
   m_Name: LeverIndicator
   m_TagString: Untagged
@@ -71829,6 +71853,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &918115707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918115704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db537b61c3f6f74a9032c1309a6a238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicators:
+  - {fileID: 21300000, guid: 7591650c722aad84983e8473f796b453, type: 3}
+  - {fileID: 21300000, guid: d8fe1ba2181bbb24da764fe09b46d5f5, type: 3}
+  - {fileID: 21300000, guid: 253c333b74313374b93b676073fa1bec, type: 3}
+  - {fileID: 21300000, guid: 27b8ec9b3e136d643878cfd581464626, type: 3}
+  - {fileID: 21300000, guid: e4908cecc2e77784abad32981e717599, type: 3}
+  - {fileID: 21300000, guid: c7e1fd35676cac44aa3078d4a2e52772, type: 3}
+  currentSprite: {fileID: 0}
+  materialType: 0
+  controlerActive: 0
 --- !u!1001 &918306803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159119,6 +159165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1856209211}
   - component: {fileID: 1856209210}
+  - component: {fileID: 1856209212}
   m_Layer: 0
   m_Name: LeverIndicator
   m_TagString: Untagged
@@ -159196,6 +159243,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856209212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856209209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db537b61c3f6f74a9032c1309a6a238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicators:
+  - {fileID: 21300000, guid: 7591650c722aad84983e8473f796b453, type: 3}
+  - {fileID: 21300000, guid: d8fe1ba2181bbb24da764fe09b46d5f5, type: 3}
+  - {fileID: 21300000, guid: 253c333b74313374b93b676073fa1bec, type: 3}
+  - {fileID: 21300000, guid: 27b8ec9b3e136d643878cfd581464626, type: 3}
+  - {fileID: 21300000, guid: e4908cecc2e77784abad32981e717599, type: 3}
+  - {fileID: 21300000, guid: c7e1fd35676cac44aa3078d4a2e52772, type: 3}
+  currentSprite: {fileID: 0}
+  materialType: 0
+  controlerActive: 0
 --- !u!1001 &1858250438
 PrefabInstance:
   m_ObjectHideFlags: 0
