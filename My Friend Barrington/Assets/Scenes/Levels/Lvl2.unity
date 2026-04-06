@@ -7277,11 +7277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -304.34
+      value: -32.9
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -789.66
+      value: -810.3
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21799,6 +21799,10 @@ PrefabInstance:
     - target: {fileID: 1776845552915117650, guid: 936490d0a2d4b8247ab1706204a4922e, type: 3}
       propertyPath: m_Name
       value: Pillow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776845552915117650, guid: 936490d0a2d4b8247ab1706204a4922e, type: 3}
+      propertyPath: m_TagString
+      value: MovableBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -66622,11 +66626,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -137.03
+      value: 217.42
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -732.25
+      value: -724.24
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -69228,11 +69232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -270.57
+      value: 18.9
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -770.91
+      value: -780
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -74828,6 +74832,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillow (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1776845552915117650, guid: 936490d0a2d4b8247ab1706204a4922e, type: 3}
+      propertyPath: m_TagString
+      value: MovableBox
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75910,11 +75918,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -218.01
+      value: 96
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -768.91
+      value: -779.5
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -96118,6 +96126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillow (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1776845552915117650, guid: 936490d0a2d4b8247ab1706204a4922e, type: 3}
+      propertyPath: m_TagString
+      value: MovableBox
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -96410,11 +96422,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -249.04
+      value: 50.2
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -792.26
+      value: -812.3
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -97332,11 +97344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -321.02
+      value: -56.5
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -789.6
+      value: -811.04
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -100720,7 +100732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventStopTrigger
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventReference.Path
@@ -100744,7 +100756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856035486624672717, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 507.9
+      value: 498.6
       objectReference: {fileID: 0}
     - target: {fileID: 8856035486624672717, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: m_LocalPosition.y
@@ -100819,7 +100831,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 181.87, y: 59.47, z: 9.8}
+  m_Size: {x: 164.6, y: 59.47, z: 9.8}
   m_Center: {x: 0, y: -4.2, z: 0}
 --- !u!1001 &1563247532
 PrefabInstance:
@@ -107656,7 +107668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventStopTrigger
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventReference.Path
@@ -107680,7 +107692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856035486624672717, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 507.9
+      value: 498.6
       objectReference: {fileID: 0}
     - target: {fileID: 8856035486624672717, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: m_LocalPosition.y
@@ -107755,7 +107767,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 181.87, y: 59.47, z: 9.8}
+  m_Size: {x: 164.6, y: 59.47, z: 9.8}
   m_Center: {x: 0, y: -4.2, z: 0}
 --- !u!1 &1673173400
 GameObject:
@@ -118743,11 +118755,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -154.42
+      value: 191.74
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -732.1
+      value: -725.16
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -118982,11 +118994,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -192.56
+      value: 134.8
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -731.8
+      value: -724.9
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -127885,11 +127897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -258.45
+      value: 35.9
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -734.58
+      value: -727.56
       objectReference: {fileID: 0}
     - target: {fileID: 8346021038713456485, guid: 8bd76cc548297204587c69f0e6067916, type: 3}
       propertyPath: m_LocalPosition.z
@@ -131557,6 +131569,10 @@ PrefabInstance:
     - target: {fileID: 1776845552915117650, guid: 936490d0a2d4b8247ab1706204a4922e, type: 3}
       propertyPath: m_Name
       value: Pillow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1776845552915117650, guid: 936490d0a2d4b8247ab1706204a4922e, type: 3}
+      propertyPath: m_TagString
+      value: MovableBox
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
