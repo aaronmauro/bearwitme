@@ -16,7 +16,7 @@ public class VideoManager : MonoBehaviour
     private VideosData _v;
     public List<int> newVideoList = new List<int>(new int[8]);
     public static int newVideoCount;
-    public static int adsNumber = 1;
+    public static int adsNumber;
 
     [Header("Video Number")]
     [HideInInspector] public bool loopVideo;

@@ -1320,7 +1320,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639110804877407201
+  lastModified: 639110805241393248
   FileSizes:
   - Name: 
     Value: 5174
@@ -1493,7 +1493,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639110804880887555
+  cacheTime: 639110805242067900
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639110804880887555
+  lastModified: 639110805242067900
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
