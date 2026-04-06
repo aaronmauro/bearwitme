@@ -135,6 +135,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-8118135215963070068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/RiftCloser
+  m_EditorClassIdentifier: 
+  Path: event:/RiftCloser
+  Guid:
+    Data1: 349150961
+    Data2: 1335233311
+    Data3: 431477685
+    Data4: -1128676766
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8117786681543475189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1266,10 +1293,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639110683961097260
+  lastModified: 639110860442621095
   FileSizes:
   - Name: 
-    Value: 5042
+    Value: 5174
   Exists: 1
 --- !u!114 &-273425419323144221
 MonoBehaviour:
@@ -1430,13 +1457,16 @@ MonoBehaviour:
   - {fileID: 8170299689257628662}
   - {fileID: 8265976516329890405}
   - {fileID: 9097650213656185184}
+  - {fileID: 6484544125717074526}
+  - {fileID: 5683650034595426675}
+  - {fileID: -8118135215963070068}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1556990543963516638}
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639110683962015034
+  cacheTime: 639110860443364283
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -2127,7 +2157,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639110683961884563
+  lastModified: 639110860443364283
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2265,6 +2295,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 49560
+--- !u!114 &5683650034595426675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/RiftEnter
+  m_EditorClassIdentifier: 
+  Path: event:/RiftEnter
+  Guid:
+    Data1: -996544988
+    Data2: 1166839725
+    Data3: -1579909478
+    Data4: -1341189642
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &5882646011552939837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2310,6 +2367,33 @@ MonoBehaviour:
     Data2: 1184161551
     Data3: -165497667
     Data4: -517036609
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6484544125717074526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/StickyHand
+  m_EditorClassIdentifier: 
+  Path: event:/StickyHand
+  Guid:
+    Data1: -1097664762
+    Data2: 1309129918
+    Data3: -1478386546
+    Data4: 1249621251
   Banks:
   - {fileID: 4196543210511341658}
   IsStream: 0
