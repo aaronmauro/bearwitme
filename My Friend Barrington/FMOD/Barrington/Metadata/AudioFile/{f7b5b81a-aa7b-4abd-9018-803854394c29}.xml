@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{f7b5b81a-aa7b-4abd-9018-803854394c29}">
 		<property name="assetPath">
-			<value>Argue3.ogg</value>
+			<value>ReplacementSounds/Argue3.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
