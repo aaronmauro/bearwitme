@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{014ac945-5a37-43cc-bb0e-b3c16a220335}">
+		<property name="assetPath">
+			<value>WhoopieCushionThree.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4999791666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{13a71483-8d85-4523-8598-6f221ec6b741}</destination>
+		</relationship>
+	</object>
+</objects>

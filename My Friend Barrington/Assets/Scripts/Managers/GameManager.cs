@@ -52,6 +52,9 @@ public class GameManager : MonoBehaviour
     Transform EndOfLevel;
     [SerializeField] Transform DebugTeleport;
 
+    [Header("Audio (FMOD)")]
+    [SerializeField] private EventReference deathSoundEvent;
+
     private void Awake()
     {
         // Application frame rate
@@ -156,6 +159,7 @@ public class GameManager : MonoBehaviour
             //Debug.Log("heavy is dead!!");
             player.freezePlayer(true);
             anim.SetTrigger("PlayerDeath");
+            RuntimeManager.PlayOneShotAttached(deathSoundEvent, gameObject);
             StartCoroutine(RespawnDelay1(1f));
         }
 
