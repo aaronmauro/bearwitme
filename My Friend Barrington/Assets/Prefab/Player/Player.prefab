@@ -204,6 +204,13 @@ MonoBehaviour:
       Data3: -1079049064
       Data4: -682505828
     Path: event:/PlayerSFX/Pushing
+  playerPushPillowEvent:
+    Guid:
+      Data1: 1384095106
+      Data2: 1325610995
+      Data3: -1698016626
+      Data4: 1908811617
+    Path: event:/PushPillow
   isInteracting: 0
   idleLookAt: {fileID: 0}
   inBush: 0

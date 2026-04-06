@@ -95,6 +95,11 @@ public class Player : MonoBehaviour
     [SerializeField]
     private FMODUnity.EventReference playerPushEvent;
     private EventInstance pushEventInstance;
+    [SerializeField]
+    private FMODUnity.EventReference playerPushPillowEvent;
+    private EventInstance pushPillowEventInstance;
+    private bool pushPillowAudioPlaying = false;
+    private bool isPushingPillow = false;
     private bool pushAudioPlaying = false;
     private bool walkAudioPlaying = false;
     private bool fmodInitialized = false;
@@ -226,6 +231,15 @@ public class Player : MonoBehaviour
         catch
         {
             Debug.LogWarning("FMOD: Failed to create/attach push event instance.");
+        }
+        try
+        {
+            pushPillowEventInstance = RuntimeManager.CreateInstance(playerPushPillowEvent);
+            RuntimeManager.AttachInstanceToGameObject(pushPillowEventInstance, transform, rb);
+        }
+        catch
+        {
+            Debug.LogWarning("FMOD: Failed to create/attach pillow push event.");
         }
     }
 
@@ -483,15 +497,52 @@ public class Player : MonoBehaviour
         // FMOD: pushing loop
         if (fmodInitialized)
         {
-            if (isPushingBox && isWalking && isGround && !pushAudioPlaying)
+            // PILLOW PUSH SOUND
+            if (isPushingPillow && isWalking && isGround)
             {
-                pushEventInstance.start();
-                pushAudioPlaying = true;
+                if (!pushPillowAudioPlaying)
+                {
+                    pushPillowEventInstance.start();
+                    pushPillowAudioPlaying = true;
+                }
+
+                // stop normal push if playing
+                if (pushAudioPlaying)
+                {
+                    pushEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    pushAudioPlaying = false;
+                }
             }
-            else if ((!isPushingBox || !isWalking || !isGround) && pushAudioPlaying)
+            // NORMAL PUSH SOUND
+            else if (isPushingBox && isWalking && isGround)
             {
-                pushEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                pushAudioPlaying = false;
+                if (!pushAudioPlaying)
+                {
+                    pushEventInstance.start();
+                    pushAudioPlaying = true;
+                }
+
+                // stop pillow push if playing
+                if (pushPillowAudioPlaying)
+                {
+                    pushPillowEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    pushPillowAudioPlaying = false;
+                }
+            }
+            // STOP ALL PUSH AUDIO
+            else
+            {
+                if (pushAudioPlaying)
+                {
+                    pushEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    pushAudioPlaying = false;
+                }
+
+                if (pushPillowAudioPlaying)
+                {
+                    pushPillowEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    pushPillowAudioPlaying = false;
+                }
             }
         }
     }
@@ -668,14 +719,22 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag(GeneralGameTags.Box))
         {
             isPushingBox = true;
+            isPushingPillow = false; // default
+        }
+
+        if (other.gameObject.CompareTag("Pillow")) // NEW
+        {
+            isPushingBox = true;
+            isPushingPillow = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag(GeneralGameTags.Box))
+        if (other.gameObject.CompareTag(GeneralGameTags.Box) || other.gameObject.CompareTag("Pillow"))
         {
             isPushingBox = false;
+            isPushingPillow = false;
         }
     }
 
