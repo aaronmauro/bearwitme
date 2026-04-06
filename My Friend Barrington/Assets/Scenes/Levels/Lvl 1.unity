@@ -164177,7 +164177,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 153.1, y: 10.6}
+  m_AnchoredPosition: {x: 152.39, y: 10.6}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1954645862
@@ -164200,7 +164200,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hold "A"
+  m_text: 'Hold "A"
+
+    For Big Jump'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
   m_sharedMaterial: {fileID: -8322860723942678991, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
