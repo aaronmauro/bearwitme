@@ -36058,6 +36058,10 @@ PrefabInstance:
       propertyPath: riftExitEvent.Guid.Data4
       value: -640068681
       objectReference: {fileID: 0}
+    - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3548849004429277409, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -36109,6 +36113,26 @@ PrefabInstance:
     - target: {fileID: 3682029474366093799, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Size.x
+      value: 1.440144
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4227816
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Center.x
+      value: 0.08747635
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Center.y
+      value: -0.21139131
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Center.z
+      value: -0.00093561865
       objectReference: {fileID: 0}
     - target: {fileID: 3939149065412249286, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92950,6 +92974,10 @@ PrefabInstance:
     - target: {fileID: 545849873802420650, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: riftExitEvent.Guid.Data4
       value: -640068681
+      objectReference: {fileID: 0}
+    - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3548849004429277409, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
@@ -168840,6 +168868,10 @@ PrefabInstance:
       propertyPath: riftExitEvent.Guid.Data4
       value: -640068681
       objectReference: {fileID: 0}
+    - target: {fileID: 2896783500151996744, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3548849004429277409, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -168891,6 +168923,22 @@ PrefabInstance:
     - target: {fileID: 3682029474366093799, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2649617
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Center.x
+      value: 9.905031e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Center.y
+      value: -0.13248129
+      objectReference: {fileID: 0}
+    - target: {fileID: 3921243048404841078, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
+      propertyPath: m_Center.z
+      value: -2.0910391e-11
       objectReference: {fileID: 0}
     - target: {fileID: 3939149065412249286, guid: 4e7a3c9bab73a2b49ba78bffa9db2207, type: 3}
       propertyPath: m_LocalPosition.x
