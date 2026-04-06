@@ -27,33 +27,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2938
---- !u!114 &-8955413200842956628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/BeachWaveCrashing
-  m_EditorClassIdentifier: 
-  Path: event:/BeachWaveCrashing
-  Guid:
-    Data1: 2044474378
-    Data2: 1271556279
-    Data3: 921701264
-    Data4: 1542859767
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 60195
 --- !u!114 &-8929230132943412663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,33 +297,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 86749
---- !u!114 &-7074920000442376174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/RiftCloser
-  m_EditorClassIdentifier: 
-  Path: event:/RiftCloser
-  Guid:
-    Data1: 955871069
-    Data2: 1333168496
-    Data3: -2073369439
-    Data4: -1254468461
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2089
 --- !u!114 &-7019486187128859815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +432,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 845
+--- !u!114 &-6018321788298739244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CloudsAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/CloudsAmbience
+  Guid:
+    Data1: 1727995796
+    Data2: 1107051172
+    Data3: -229274450
+    Data4: -186317657
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42560
 --- !u!114 &-5857693086253024744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,33 +486,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 57508
---- !u!114 &-5701511487138310837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ForestAmbience
-  m_EditorClassIdentifier: 
-  Path: event:/ForestAmbience
-  Guid:
-    Data1: 2051213742
-    Data2: 1089833678
-    Data3: -1718998613
-    Data4: -1521071365
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 200160
 --- !u!114 &-5643518011031149676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,33 +1071,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 622
---- !u!114 &-2290200856813684444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/RiftEnter
-  m_EditorClassIdentifier: 
-  Path: event:/RiftEnter
-  Guid:
-    Data1: 440357933
-    Data2: 1205063132
-    Data3: -1657311829
-    Data4: -569442096
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2222578506152208952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,7 +1194,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639109025096584181
+  lastModified: 639110288831194667
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1347,10 +1266,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639109025096604126
+  lastModified: 639110288831224458
   FileSizes:
   - Name: 
-    Value: 5130
+    Value: 5042
   Exists: 1
 --- !u!114 &-273425419323144221
 MonoBehaviour:
@@ -1434,7 +1353,6 @@ MonoBehaviour:
   - {fileID: -8514731933417246789}
   - {fileID: 8557254738894599048}
   - {fileID: -5643518011031149676}
-  - {fileID: -2290200856813684444}
   - {fileID: 1242253052179185182}
   - {fileID: -6218771313395097325}
   - {fileID: -5062085148845974239}
@@ -1443,9 +1361,7 @@ MonoBehaviour:
   - {fileID: -5514929221987293713}
   - {fileID: -4773041775631044937}
   - {fileID: -3704472923734190446}
-  - {fileID: -8955413200842956628}
   - {fileID: 6328018213187733106}
-  - {fileID: -7074920000442376174}
   - {fileID: 3380617216731020598}
   - {fileID: 5882646011552939837}
   - {fileID: 3668685208525463281}
@@ -1489,7 +1405,6 @@ MonoBehaviour:
   - {fileID: 8542267199767073969}
   - {fileID: -8062479292418897949}
   - {fileID: 2424733617150124}
-  - {fileID: 9152379643696747853}
   - {fileID: -3329115353960962068}
   - {fileID: 6584685070642504346}
   - {fileID: 7484707922860642127}
@@ -1509,17 +1424,19 @@ MonoBehaviour:
   - {fileID: -7019486187128859815}
   - {fileID: -3814484302680410048}
   - {fileID: -7218173690600723810}
-  - {fileID: 4003437984083138798}
   - {fileID: -205903646520281575}
-  - {fileID: 5539192203051078407}
-  - {fileID: -5701511487138310837}
+  - {fileID: 469124044204351037}
+  - {fileID: -6018321788298739244}
+  - {fileID: 8170299689257628662}
+  - {fileID: 8265976516329890405}
+  - {fileID: 9097650213656185184}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1556990543963516638}
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639109036655865745
+  cacheTime: 639110288836843231
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -1537,164 +1454,160 @@ MonoBehaviour:
     index: 6
   - key: event:/BeachWind
     index: 7
-  - key: event:/RiftEnter
-    index: 8
   - key: event:/BottleBreaking
-    index: 9
+    index: 8
   - key: event:/BubblesFloating
-    index: 10
+    index: 9
   - key: event:/CoinCollect
-    index: 11
+    index: 10
   - key: event:/UIMenuQuitGameButton
-    index: 12
+    index: 11
   - key: event:/UICloseButton
-    index: 13
+    index: 12
   - key: event:/BubbleDrop
-    index: 14
+    index: 13
   - key: event:/UIResumeGameButton
-    index: 15
+    index: 14
   - key: event:/UIMenuCreditsButton
-    index: 16
-  - key: event:/BeachWaveCrashing
-    index: 17
+    index: 15
   - key: event:/UIMenuSliderSFX
-    index: 18
-  - key: event:/RiftCloser
-    index: 19
+    index: 16
   - key: event:/UIMenuSliderMusic
-    index: 20
+    index: 17
   - key: event:/Grapple
-    index: 21
+    index: 18
   - key: event:/BeachCalmWaves
-    index: 22
+    index: 19
   - key: event:/WhoopieCushion
-    index: 23
+    index: 20
   - key: event:/UIMenuStartGameButton
-    index: 24
+    index: 21
   - key: event:/ButtonDrop
-    index: 25
+    index: 22
   - key: event:/UIMenuExtraOne
-    index: 26
+    index: 23
   - key: event:/UIMenuContinueButton
-    index: 27
+    index: 24
   - key: event:/PlatformFootsteps
-    index: 28
+    index: 25
   - key: event:/UIMainMenuButton
-    index: 29
+    index: 26
   - key: event:/BeachSeagulls
-    index: 30
+    index: 27
   - key: event:/BeachWindInLeaves
-    index: 31
+    index: 28
   - key: event:/ParentsMuffledArguing
-    index: 32
+    index: 29
   - key: event:/UIMenuOptionsButton
-    index: 33
+    index: 30
   - key: event:/BubblePop
-    index: 34
+    index: 31
   - key: event:/VideoEvents/TylerLoopTV
-    index: 35
+    index: 32
   - key: event:/VideoEvents/AndreSlapTV
-    index: 36
+    index: 33
   - key: event:/VideoEvents/AllTV
-    index: 37
+    index: 34
   - key: event:/VideoEvents/NoAndreTV
-    index: 38
+    index: 35
   - key: event:/VideoEvents/AndreLoopTV
-    index: 39
+    index: 36
   - key: event:/VideoEvents/Ad2TV
-    index: 40
+    index: 37
   - key: event:/VideoEvents/KieranFinalTV
-    index: 41
+    index: 38
   - key: event:/VideoEvents/KieranLoopTV
-    index: 42
+    index: 39
   - key: event:/VideoEvents/AndreFinalTV
-    index: 43
+    index: 40
   - key: event:/VideoEvents/Cutscene1_Part2
-    index: 44
+    index: 41
   - key: event:/VideoEvents/TylerFinalTV
-    index: 45
+    index: 42
   - key: event:/VideoEvents/NoKieranTV
-    index: 46
+    index: 43
   - key: event:/VideoEvents/NoTylerTV
-    index: 47
+    index: 44
   - key: event:/VideoEvents/Cutscene1_Part1
-    index: 48
+    index: 45
   - key: event:/VideoEvents/TylerSlapTV
-    index: 49
+    index: 46
   - key: event:/VideoEvents/C2-pillow fort-plain
-    index: 50
+    index: 47
   - key: event:/VideoEvents/KieranSlapTV
-    index: 51
+    index: 48
   - key: event:/FelliniVoices
-    index: 52
+    index: 49
   - key: event:/EnterBush
-    index: 53
+    index: 50
   - key: event:/CrayonBreak
-    index: 54
+    index: 51
   - key: event:/ButtonPickUp
-    index: 55
+    index: 52
   - key: event:/BeachBall
-    index: 56
+    index: 53
   - key: event:/FallinWater
-    index: 57
+    index: 54
   - key: event:/StickyRetract
-    index: 58
+    index: 55
   - key: event:/EnterBush 2
-    index: 59
+    index: 56
   - key: event:/StickyRetract 2
-    index: 60
+    index: 57
   - key: event:/LeverPull
-    index: 61
+    index: 58
   - key: event:/BounceCloud
-    index: 62
-  - key: event:/StickyHand
-    index: 63
+    index: 59
   - key: event:/PlayerSFX/SoftFootsteps
-    index: 64
+    index: 60
   - key: event:/PlayerSFX/Jump1
-    index: 65
+    index: 61
   - key: event:/MapOpen
-    index: 66
+    index: 62
   - key: event:/RiftExit
-    index: 67
+    index: 63
   - key: event:/RiftEnter 2
-    index: 68
+    index: 64
   - key: event:/SignNotify
-    index: 69
+    index: 65
   - key: event:/SignPopUp
-    index: 70
+    index: 66
   - key: event:/GlassFall_1
-    index: 71
+    index: 67
   - key: event:/GlassFall
-    index: 72
+    index: 68
   - key: event:/PillowGet_1
-    index: 73
+    index: 69
   - key: event:/PillowGet
-    index: 74
+    index: 70
   - key: event:/EnterRock
-    index: 75
+    index: 71
   - key: event:/FallingRocks
-    index: 76
+    index: 72
   - key: event:/BeachBallBounce
-    index: 77
+    index: 73
   - key: event:/PeteParrot
-    index: 78
+    index: 74
   - key: event:/MarvinMonkey
-    index: 79
+    index: 75
   - key: event:/CaveEchoDrips
-    index: 80
+    index: 76
   - key: event:/PushPillow
-    index: 81
+    index: 77
   - key: event:/ParentsMuffledArguing1
+    index: 78
+  - key: event:/PlayerSFX/Pushing
+    index: 79
+  - key: event:/BeachWaveCrashing
+    index: 80
+  - key: event:/CloudsAmbience
+    index: 81
+  - key: event:/ForestAmbience
     index: 82
   - key: event:/CaveWinds
     index: 83
-  - key: event:/PlayerSFX/Pushing
+  - key: event:/StickyHand_2
     index: 84
-  - key: event:/CloudsAmbience
-    index: 85
-  - key: event:/ForestAmbience
-    index: 86
 --- !u!114 &2424733617150124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1830,6 +1743,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &469124044204351037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BeachWaveCrashing
+  m_EditorClassIdentifier: 
+  Path: event:/BeachWaveCrashing
+  Guid:
+    Data1: 2044474378
+    Data2: 1271556279
+    Data3: 921701264
+    Data4: 1542859767
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60195
 --- !u!114 &479256777611745441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,33 +2112,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 20450
---- !u!114 &4003437984083138798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/CaveWinds
-  m_EditorClassIdentifier: 
-  Path: event:/CaveWinds
-  Guid:
-    Data1: -562560077
-    Data2: 1093426496
-    Data3: -1996691543
-    Data4: -1432624786
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 13704
 --- !u!114 &4196543210511341658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2214,7 +2127,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639109036655865745
+  lastModified: 639110288836843231
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2352,33 +2265,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 49560
---- !u!114 &5539192203051078407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/CloudsAmbience
-  m_EditorClassIdentifier: 
-  Path: event:/CloudsAmbience
-  Guid:
-    Data1: 1727995796
-    Data2: 1107051172
-    Data3: -229274450
-    Data4: -186317657
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42560
 --- !u!114 &5882646011552939837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2613,6 +2499,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &8170299689257628662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ForestAmbience
+  m_EditorClassIdentifier: 
+  Path: event:/ForestAmbience
+  Guid:
+    Data1: 2051213742
+    Data2: 1089833678
+    Data3: -1718998613
+    Data4: -1521071365
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200160
+--- !u!114 &8265976516329890405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CaveWinds
+  m_EditorClassIdentifier: 
+  Path: event:/CaveWinds
+  Guid:
+    Data1: -562560077
+    Data2: 1093426496
+    Data3: -1996691543
+    Data4: -1432624786
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13704
 --- !u!114 &8283616487910363730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2694,6 +2634,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5116
+--- !u!114 &9097650213656185184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/StickyHand_2
+  m_EditorClassIdentifier: 
+  Path: event:/StickyHand_2
+  Guid:
+    Data1: -247972419
+    Data2: 1083218901
+    Data3: -506587976
+    Data4: -1902409834
+  Banks:
+  - {fileID: 4196543210511341658}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &9112107968846413901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2721,30 +2688,3 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 57815
---- !u!114 &9152379643696747853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/StickyHand
-  m_EditorClassIdentifier: 
-  Path: event:/StickyHand
-  Guid:
-    Data1: -1633164320
-    Data2: 1074365987
-    Data3: 2066409126
-    Data4: 1444551711
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
