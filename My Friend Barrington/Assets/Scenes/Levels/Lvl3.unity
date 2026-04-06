@@ -10192,19 +10192,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 183213362375029816, guid: 58f5ef807cc9bcd46873cd0d8a923dd1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.69058424
+      value: 0.6909122
       objectReference: {fileID: 0}
     - target: {fileID: 183213362375029816, guid: 58f5ef807cc9bcd46873cd0d8a923dd1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00466721
+      value: 0.0046694274
       objectReference: {fileID: 0}
     - target: {fileID: 183213362375029816, guid: 58f5ef807cc9bcd46873cd0d8a923dd1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.72322047
+      value: 0.7229071
       objectReference: {fileID: 0}
     - target: {fileID: 183213362375029816, guid: 58f5ef807cc9bcd46873cd0d8a923dd1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.004887776
+      value: -0.004885661
       objectReference: {fileID: 0}
     - target: {fileID: 283709606379894786, guid: 58f5ef807cc9bcd46873cd0d8a923dd1, type: 3}
       propertyPath: Lens.FieldOfView
@@ -51158,19 +51158,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 801757631825706104, guid: 305ef4cc8a6fb544fab07ee14fe11fd3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6905842
+      value: 0.6909122
       objectReference: {fileID: 0}
     - target: {fileID: 801757631825706104, guid: 305ef4cc8a6fb544fab07ee14fe11fd3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0046672085
+      value: 0.004669428
       objectReference: {fileID: 0}
     - target: {fileID: 801757631825706104, guid: 305ef4cc8a6fb544fab07ee14fe11fd3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.72322047
+      value: 0.7229071
       objectReference: {fileID: 0}
     - target: {fileID: 801757631825706104, guid: 305ef4cc8a6fb544fab07ee14fe11fd3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.004887776
+      value: -0.0048856605
       objectReference: {fileID: 0}
     - target: {fileID: 801757631825706104, guid: 305ef4cc8a6fb544fab07ee14fe11fd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -100238,8 +100238,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 230, y: -72.2, z: 32}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 198.7406, y: 72.2, z: 32}
+  m_Center: {x: -15.6297, y: 0, z: 0}
 --- !u!1001 &1011374946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112209,8 +112209,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 230, y: -72.2, z: 32}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 198.7406, y: 72.2, z: 32}
+  m_Center: {x: -15.6297, y: 0, z: 0}
 --- !u!1001 &1149935944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113307,8 +113307,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 230, y: -72.2, z: 32}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 198.7406, y: 72.2, z: 32}
+  m_Center: {x: -15.6297, y: 0, z: 0}
 --- !u!1 &1165590476
 GameObject:
   m_ObjectHideFlags: 0
@@ -190580,8 +190580,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 230, y: -72.2, z: 32}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 198.7406, y: 72.2, z: 32}
+  m_Center: {x: -15.6297, y: 0, z: 0}
 --- !u!1 &1956291227
 GameObject:
   m_ObjectHideFlags: 0
