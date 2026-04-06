@@ -719,10 +719,10 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag(GeneralGameTags.Box))
         {
             isPushingBox = true;
-            isPushingPillow = false; // default
+            isPushingPillow = false;
         }
 
-        if (other.gameObject.CompareTag("Pillow")) // NEW
+        if (other.gameObject.CompareTag("Pillow")) 
         {
             isPushingBox = true;
             isPushingPillow = true;

@@ -100720,7 +100720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventStopTrigger
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventReference.Path
@@ -100744,7 +100744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856035486624672717, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 507.9
+      value: 498.6
       objectReference: {fileID: 0}
     - target: {fileID: 8856035486624672717, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: m_LocalPosition.y
@@ -100819,7 +100819,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 181.87, y: 59.47, z: 9.8}
+  m_Size: {x: 164.6, y: 59.47, z: 9.8}
   m_Center: {x: 0, y: -4.2, z: 0}
 --- !u!1001 &1563247532
 PrefabInstance:
@@ -107656,7 +107656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventStopTrigger
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8423199185860995368, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: EventReference.Path
@@ -107680,7 +107680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856035486624672717, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 507.9
+      value: 498.6
       objectReference: {fileID: 0}
     - target: {fileID: 8856035486624672717, guid: 3df4c74e15a3fad4489811f4a28f6435, type: 3}
       propertyPath: m_LocalPosition.y
@@ -107755,7 +107755,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 181.87, y: 59.47, z: 9.8}
+  m_Size: {x: 164.6, y: 59.47, z: 9.8}
   m_Center: {x: 0, y: -4.2, z: 0}
 --- !u!1 &1673173400
 GameObject:
