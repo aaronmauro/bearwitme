@@ -1,10 +1,13 @@
 using UnityEngine;
+#if !DISABLESTEAMWORKS
 using Steamworks;
+#endif
 
 public class SteamAchievementManager : MonoBehaviour
 {
     public static void UnlockAchievement(string achievementID)
     {
+#if !DISABLESTEAMWORKS
         if (!SteamManager.Initialized)
         {
             Debug.LogWarning("Steam not initialized. Cannot unlock achievement.");
@@ -20,5 +23,6 @@ public class SteamAchievementManager : MonoBehaviour
             SteamUserStats.StoreStats();
             Debug.Log($"Achievement unlocked: {achievementID}");
         }
+#endif
     }
 }

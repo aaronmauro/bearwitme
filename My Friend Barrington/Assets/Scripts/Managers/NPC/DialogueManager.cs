@@ -30,6 +30,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private bool canSkipTyping = true; // Allow players to skip typing animation
 
     [Header("Audio (FMOD)")]
+    [SerializeField] private EventReference dialogueMarvinEvent;
+    [SerializeField] private EventReference dialoguePeteEvent;
     [SerializeField] private EventReference dialogueFelliniEvent;
 
     /*[Header("Audio (FMOD)")]
@@ -51,6 +53,8 @@ public class DialogueManager : MonoBehaviour
     public event System.Action OnDialogueEnd;
     [SerializeField] private Player player;
     [SerializeField] public Animator animator;
+
+    private string currentNPC = "";
 
     private void Awake()
     {
@@ -250,7 +254,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator TypeText(string text)
     {
-        RuntimeManager.PlayOneShotAttached(dialogueFelliniEvent, gameObject);
+        PlayDialogueSound();
         isTyping = true;
         dialogueText.text = "";
 
@@ -273,6 +277,30 @@ public class DialogueManager : MonoBehaviour
         // After typing is complete, display choices or continue button
         DisplayChoices();
        
+    }
+
+    // Specific NPC
+    private void PlayDialogueSound()
+    {
+        Debug.Log("Playing dialogue sound for: " + currentNPC);
+        switch (currentNPC)
+        {
+            case "Marvin":
+                RuntimeManager.PlayOneShotAttached(dialogueMarvinEvent, gameObject);
+                break;
+
+            case "Parrot Pete":
+                RuntimeManager.PlayOneShotAttached(dialoguePeteEvent, gameObject);
+                break;
+
+            case "Fellini":
+                RuntimeManager.PlayOneShotAttached(dialogueFelliniEvent, gameObject);
+                break;
+
+            default:
+                Debug.LogWarning("No dialogue sound assigned for NPC: " + currentNPC);
+                break;
+        }
     }
 
     private void SkipTyping()
@@ -458,6 +486,8 @@ public class DialogueManager : MonoBehaviour
         dialogueName.SetText(npcName);
         dialogueImage.sprite = npcImage;
         dialogueBox.sprite = npcDialogueBox;
+
+        currentNPC = npcName;
     }
 
     private void HandleTags(List<string> currentTags)
@@ -505,6 +535,17 @@ public class DialogueManager : MonoBehaviour
             }
 
             // Add other tag handlers here (e.g. 'name', 'portrait', etc.)
+            // thank you! i think i will - DV
+            else if (key == "stickyGive")
+            {
+                Debug.Log("why");
+                Debug.Log(animator);
+                animator.gameObject.transform.GetChild(0).gameObject.GetComponent<stickyGetHandler>().StickyGive();
+            }
+            else if (key == "stickyGet")
+            {
+                animator.gameObject.transform.GetChild(0).gameObject.GetComponent<stickyGetHandler>().StickyGet();
+            }
         }
     }
 }
