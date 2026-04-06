@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{3803037e-c368-470a-80fe-6ca81d5724d0}">
 		<property name="assetPath">
-			<value>RiftEnter.ogg</value>
+			<value>RiftEnter_1.ogg</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>24</value>

@@ -268,11 +268,11 @@ MonoBehaviour:
     Path: 
   stickyStickEvent:
     Guid:
-      Data1: -1633164320
-      Data2: 1074365987
-      Data3: 2066409126
-      Data4: 1444551711
-    Path: event:/StickyHand
+      Data1: -247972419
+      Data2: 1083218901
+      Data3: -506587976
+      Data4: -1902409834
+    Path: event:/StickyHand_2
   stickyRetractEvent:
     Guid:
       Data1: 508286970

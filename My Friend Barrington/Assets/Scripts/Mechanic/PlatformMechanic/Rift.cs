@@ -2,7 +2,9 @@ using FMODUnity;
 using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Video;
 
+//[DefaultExecutionOrder(-2)]
 public class Rift : MonoBehaviour
 {
     [Header("References")]
@@ -17,12 +19,22 @@ public class Rift : MonoBehaviour
     [SerializeField] private bool hideSpawn = false;
     [SerializeField] private float triggerDistance = 2f;
 
+    [SerializeField] public GameObject tpAnimation;
+    [SerializeField] private VideoPlayer tpVideoPlay;
+
     public bool isTp;
 
     [Header("Audio (FMOD)")]
     [SerializeField] private EventReference riftExitEvent;
 
     private Coroutine followCoroutine;
+
+    private void Awake()
+    {
+        if (tpAnimation != null) return;
+        tpAnimation = GameObject.Find("tpAnimation");
+        tpVideoPlay = GameObject.Find("tpVideo").gameObject.GetComponent<VideoPlayer>();
+    }
 
     private void Start()
     {
@@ -39,6 +51,8 @@ public class Rift : MonoBehaviour
         // Force the fullscreen/audio rift effect off before teleporting
         if (RiftEffectManager.Instance != null)
             RiftEffectManager.Instance.ForceOff();
+        // Play Video
+        StartCoroutine(playTpVideo());
 
         // Disable camera damping briefly for teleport
         playerCam.TrackerSettings.PositionDamping = Vector3.zero;
@@ -69,11 +83,10 @@ public class Rift : MonoBehaviour
 
     private IEnumerator StartCooldown()
     {
-        if (hideSpawn)
-            gameObject.SetActive(false);
-
         yield return new WaitForSeconds(tpCooldown);
         isTp = false;
+        if (hideSpawn)
+            gameObject.SetActive(false);
     }
 
     private IEnumerator StartFollowing()
@@ -83,6 +96,16 @@ public class Rift : MonoBehaviour
         followCoroutine = null;
     }
 
+    private IEnumerator playTpVideo()
+    {
+        //Debug.Log("player");
+        //tpAnimation = GameObject.Find("tpAnimation");
+        tpAnimation.SetActive(true);
+        tpVideoPlay.Play();
+        yield return new WaitForSeconds(2f);
+        tpAnimation.SetActive(false);
+        tpVideoPlay.Stop();
+    }
     private void OnDisable()
     {
         // If this rift gets disabled while active, make sure effect is not left hanging

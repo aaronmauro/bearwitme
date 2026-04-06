@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     private bool isIdleAnimation;
     private bool isfalling;
     private float facingCameraTimer;
+
     
     // Visual frame flip
     [SerializeField] private Transform visual;
@@ -91,6 +92,15 @@ public class Player : MonoBehaviour
     [SerializeField]
     private FMODUnity.EventReference playerJumpEvent; // add jump event reference
     private EventInstance walkEventInstance;
+    [SerializeField]
+    private FMODUnity.EventReference playerPushEvent;
+    private EventInstance pushEventInstance;
+    [SerializeField]
+    private FMODUnity.EventReference playerPushPillowEvent;
+    private EventInstance pushPillowEventInstance;
+    private bool pushPillowAudioPlaying = false;
+    private bool isPushingPillow = false;
+    private bool pushAudioPlaying = false;
     private bool walkAudioPlaying = false;
     private bool fmodInitialized = false;
 
@@ -172,6 +182,16 @@ public class Player : MonoBehaviour
             fmodInitialized = false;
             walkAudioPlaying = false;
         }
+
+        // Stop & release FMOD instance
+        if (pushAudioPlaying)
+        {
+            pushEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            pushEventInstance.release();
+            fmodInitialized = false;
+            
+        }
+        pushAudioPlaying = false;
     }
 
     // Setting up values at start
@@ -200,6 +220,26 @@ public class Player : MonoBehaviour
         {
             Debug.LogWarning("FMOD: Failed to create/attach walk event instance. Check EventReference in inspector.");
             fmodInitialized = false;
+        }
+
+        // Initialize FMOD push event instance from EventReference
+        try
+        {
+            pushEventInstance = RuntimeManager.CreateInstance(playerPushEvent);
+            RuntimeManager.AttachInstanceToGameObject(pushEventInstance, transform, rb);
+        }
+        catch
+        {
+            Debug.LogWarning("FMOD: Failed to create/attach push event instance.");
+        }
+        try
+        {
+            pushPillowEventInstance = RuntimeManager.CreateInstance(playerPushPillowEvent);
+            RuntimeManager.AttachInstanceToGameObject(pushPillowEventInstance, transform, rb);
+        }
+        catch
+        {
+            Debug.LogWarning("FMOD: Failed to create/attach pillow push event.");
         }
     }
 
@@ -453,6 +493,58 @@ public class Player : MonoBehaviour
                 walkAudioPlaying = false;
             }
         }
+        
+        // FMOD: pushing loop
+        if (fmodInitialized)
+        {
+            // PILLOW PUSH SOUND
+            if (isPushingPillow && isWalking && isGround)
+            {
+                if (!pushPillowAudioPlaying)
+                {
+                    pushPillowEventInstance.start();
+                    pushPillowAudioPlaying = true;
+                }
+
+                // stop normal push if playing
+                if (pushAudioPlaying)
+                {
+                    pushEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    pushAudioPlaying = false;
+                }
+            }
+            // NORMAL PUSH SOUND
+            else if (isPushingBox && isWalking && isGround)
+            {
+                if (!pushAudioPlaying)
+                {
+                    pushEventInstance.start();
+                    pushAudioPlaying = true;
+                }
+
+                // stop pillow push if playing
+                if (pushPillowAudioPlaying)
+                {
+                    pushPillowEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    pushPillowAudioPlaying = false;
+                }
+            }
+            // STOP ALL PUSH AUDIO
+            else
+            {
+                if (pushAudioPlaying)
+                {
+                    pushEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    pushAudioPlaying = false;
+                }
+
+                if (pushPillowAudioPlaying)
+                {
+                    pushPillowEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                    pushPillowAudioPlaying = false;
+                }
+            }
+        }
     }
     private void isGroundRayCast()
     {
@@ -627,14 +719,22 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag(GeneralGameTags.Box))
         {
             isPushingBox = true;
+            isPushingPillow = false;
+        }
+
+        if (other.gameObject.CompareTag("Pillow")) 
+        {
+            isPushingBox = true;
+            isPushingPillow = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag(GeneralGameTags.Box))
+        if (other.gameObject.CompareTag(GeneralGameTags.Box) || other.gameObject.CompareTag("Pillow"))
         {
             isPushingBox = false;
+            isPushingPillow = false;
         }
     }
 
