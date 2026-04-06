@@ -1494,7 +1494,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639110837012864906
+  cacheTime: 639110881589350513
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -2535,7 +2535,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/LevelSoundTracks.bank
   Name: LevelSoundTracks
   StudioPath: bank:/LevelSoundTracks
-  lastModified: 639110837012864906
+  lastModified: 639110881589350513
   FileSizes: []
   Exists: 1
 --- !u!114 &7980816308397880968
