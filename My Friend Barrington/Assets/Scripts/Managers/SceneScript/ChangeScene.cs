@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class ChangeScene : MonoBehaviour
 {
@@ -19,6 +20,11 @@ public class ChangeScene : MonoBehaviour
 
     private VideoManager vm;
     private Player player;
+
+    [SerializeField]
+    private Image FadeToBlack;
+    private bool FadeStart = false;
+    private float fade = 0;
     private void Awake()
     {
         // move camera
@@ -61,6 +67,13 @@ public class ChangeScene : MonoBehaviour
     }
     private void Update()
     {
+        if (FadeStart)
+        {
+            fade += 0.01f;
+            Debug.Log(fade);
+            FadeToBlack.color = new Color(0, 0, 0, fade);
+
+        }
         // Change Scene Script
         if (changeScene)
         {
@@ -75,6 +88,7 @@ public class ChangeScene : MonoBehaviour
         {
             VideoManager.adsNumber = nextAds;
         }
+        
     }
     // triggers scene change when player enters collider
     private void OnTriggerEnter(Collider other)
@@ -98,6 +112,8 @@ public class ChangeScene : MonoBehaviour
     private IEnumerator playVideo()
     {
         cm.enabled = true;
+        FadeToBlack.gameObject.SetActive(true);
+        FadeStart = true;
         if (boatVideo != null)
         {
             boatVideo.SetActive(true);
