@@ -284,7 +284,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 25}
-  m_SizeDelta: {x: 1920, y: 773}
+  m_SizeDelta: {x: 1920, y: 500}
   m_Pivot: {x: 0.49999997, y: 0}
 --- !u!222 &4439458167988487612
 CanvasRenderer:
@@ -340,7 +340,8 @@ MonoBehaviour:
   inkJSON: {fileID: 4900000, guid: 370e9b06c74db8d4cb98701e54d0c097, type: 3}
   npcName: 
   npcImage: {fileID: 0}
-  rift: {fileID: 0}
+  npcDialogueBox: {fileID: 0}
+  rifts: []
 --- !u!1 &2403040894672761038
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,9 +725,9 @@ RectTransform:
   - {fileID: 2100229272577672001}
   m_Father: {fileID: 3112556230139176818}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 534.99994, y: -225}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -300, y: 100}
   m_SizeDelta: {x: 170, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3321656934765707444
@@ -857,7 +858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -100}
+  m_AnchoredPosition: {x: 100, y: -30}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1842555204430419659
@@ -1026,8 +1027,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elit ex,
     convallis sed fermentum aliquet, viverra a lectus. Phasellus eu mauris diam.
-    Maecenas ante dolor, vestibulum in pellentesque quis, imperdiet eget justo. Nunc
-    at tempus erat.
+    Maecenas ante dolor, vestibulum in pellentesque quis, imperdiet eget justo.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
   m_sharedMaterial: {fileID: -8322860723942678991, guid: 084929ad7841e3147966e8eea7f6e45a, type: 2}
@@ -1270,7 +1270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 609.1115, y: 34.567017}
+  m_AnchoredPosition: {x: 609.1115, y: 34.566895}
   m_SizeDelta: {x: 450.21, y: 350.865}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5036923815901265484
@@ -2239,7 +2239,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: -50}
+  m_AnchoredPosition: {x: -150, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &8024690405146488303
