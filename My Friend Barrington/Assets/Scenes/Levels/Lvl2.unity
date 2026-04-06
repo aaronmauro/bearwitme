@@ -154481,6 +154481,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1140915927278324279, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298686481795772902, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2473008720399835677, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6421875
@@ -154533,9 +154541,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2844286805346404535, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427953263245966165, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6493561586472383733, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6571509281731484546, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
       propertyPath: m_Name
       value: HookUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793982793843721069, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830141295838335978, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143588825665808757, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9212383300892144616, guid: a72374948bba9a547b5e8ec1b0c72f89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

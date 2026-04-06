@@ -20,7 +20,7 @@ public class ChangeIndicatorByControl : MonoBehaviour
     void FixedUpdate()
     {
         ChangeIndicator();
-        Debug.Log(InputManager.controlerUI);
+        //Debug.Log(InputManager.controlerUI);
     }
 
     public void ChangeIndicator()
