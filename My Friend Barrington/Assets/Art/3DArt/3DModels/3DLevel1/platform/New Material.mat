@@ -10,13 +10,14 @@ Material:
   m_Name: New Material
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 2100000, guid: 901b90e06729ded41b06a560e1e7b535, type: 2}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ModifiedSerializedProperties: 16
+  m_ValidKeywords:
+  - _RECEIVE_SHADOWS_OFF
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap:
     IgnoreProjection: False
     RenderType: Opaque
@@ -36,13 +37,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Metallic: 0
     - _Parallax: 0.005
+    - _ReceiveShadows: 0
+    - _Smoothness: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0.9987487, b: 0.8066038, a: 1}
-    - _Color: {r: 1, g: 0.9987487, b: 0.8066038, a: 1}
+    - _BaseColor: {r: 0.82745105, g: 0.80392164, b: 0.7490196, a: 1}
+    - _Color: {r: 0.82745105, g: 0.80392164, b: 0.7490196, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

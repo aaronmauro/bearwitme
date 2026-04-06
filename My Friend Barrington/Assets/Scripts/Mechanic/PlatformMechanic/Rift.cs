@@ -5,79 +5,89 @@ using UnityEngine;
 
 public class Rift : MonoBehaviour
 {
-    // getting componenet
-    [SerializeField]
-    private GameObject tpTransform;
+    [Header("References")]
+    [SerializeField] private GameObject tpTransform;
+
     private Rift otherRift;
     private Player player;
     private CinemachineFollow playerCam;
 
-    [Header("Teleport Setting")]
-    [SerializeField]
-    private float tpCooldown;
+    [Header("Teleport Settings")]
+    [SerializeField] private float tpCooldown = 1f;
+    [SerializeField] private bool hideSpawn = false;
+    [SerializeField] private float triggerDistance = 2f;
+
     public bool isTp;
-    public bool hideSpawn;
-    [SerializeField]
-    private float triggerDistance;
 
     [Header("Audio (FMOD)")]
     [SerializeField] private EventReference riftExitEvent;
 
+    private Coroutine followCoroutine;
+
     private void Start()
     {
-        // Get Player component
         otherRift = tpTransform.GetComponent<Rift>();
         player = gameObject.findPlayer();
         playerCam = GameObject.Find(GeneralGameTags.PlayerCamera).GetComponent<CinemachineFollow>();
     }
 
-    private void FixedUpdate()
-    {
-        if (isTp)
-        {
-            StartCoroutine(startFollowing());
-        }
-        else
-        {
-            return;
-        }
-    }
     private void OnTriggerEnter(Collider other)
     {
-        // Teleport Player
-        if (other.gameObject.isPlayer())
-        {
-            if (!isTp)
-            {
-                // Teleport the player to the other rift's position
-                playerCam.TrackerSettings.PositionDamping = Vector3.zero;
-                player.transform.position = tpTransform.transform.position;
-                RuntimeManager.PlayOneShotAttached(riftExitEvent, gameObject);
-                isTp = true;
-                otherRift.isTp = true;
-                StartCoroutine(startCooldown());
-                otherRift.StartCoroutine(otherRift.startCooldown());
-            }
-        }
+        if (!other.gameObject.isPlayer()) return;
+        if (isTp) return;
+
+        // Force the fullscreen/audio rift effect off before teleporting
+        if (RiftEffectManager.Instance != null)
+            RiftEffectManager.Instance.ForceOff();
+
+        // Disable camera damping briefly for teleport
+        playerCam.TrackerSettings.PositionDamping = Vector3.zero;
+
+        // Teleport player
+        player.transform.position = tpTransform.transform.position;
+
+        // Play exit sound
+        RuntimeManager.PlayOneShotAttached(riftExitEvent, gameObject);
+
+        // Prevent immediate re-teleport loops on both rifts
+        isTp = true;
+        if (otherRift != null)
+            otherRift.isTp = true;
+
+        // Start cooldown on both rifts
+        StartCoroutine(StartCooldown());
+
+        if (otherRift != null)
+            otherRift.StartCoroutine(otherRift.StartCooldown());
+
+        // Start camera restore once
+        if (followCoroutine != null)
+            StopCoroutine(followCoroutine);
+
+        followCoroutine = StartCoroutine(StartFollowing());
     }
 
-    // cooldown for tp again
-    private IEnumerator startCooldown()
+    private IEnumerator StartCooldown()
     {
-        // Wait for cooldown duration
         if (hideSpawn)
-        {
             gameObject.SetActive(false);
-        }
+
         yield return new WaitForSeconds(tpCooldown);
         isTp = false;
     }
 
-    // cooldown for camera
-    private IEnumerator startFollowing()
+    private IEnumerator StartFollowing()
     {
         yield return new WaitForSeconds(0.5f);
         playerCam.TrackerSettings.PositionDamping = Vector3.one;
+        followCoroutine = null;
+    }
+
+    private void OnDisable()
+    {
+        // If this rift gets disabled while active, make sure effect is not left hanging
+        if (RiftEffectManager.Instance != null)
+            RiftEffectManager.Instance.ForceOff();
     }
 
     private void OnDrawGizmos()
