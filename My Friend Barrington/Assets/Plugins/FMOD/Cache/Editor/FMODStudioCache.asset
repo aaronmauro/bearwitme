@@ -717,7 +717,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Barrington.bank
   Name: Barrington
   StudioPath: bank:/Barrington
-  lastModified: 639110821152717148
+  lastModified: 639110833005682049
   FileSizes: []
   Exists: 1
 --- !u!114 &-4570363228950454038
@@ -1248,7 +1248,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639110821152827407
+  lastModified: 639110833006334422
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1320,10 +1320,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639110821152842435
+  lastModified: 639110833006359482
   FileSizes:
   - Name: 
-    Value: 5174
+    Value: 5226
   Exists: 1
 --- !u!114 &-273425419323144221
 MonoBehaviour:
@@ -1487,13 +1487,14 @@ MonoBehaviour:
   - {fileID: 4721946876674936226}
   - {fileID: -2097583814764672882}
   - {fileID: -2899629130459247762}
+  - {fileID: 1448298925097787814}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1556990543963516638}
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639110821153591795
+  cacheTime: 639110833009767251
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -1671,6 +1672,8 @@ MonoBehaviour:
     index: 86
   - key: event:/RiftCloser
     index: 87
+  - key: event:/PlayerSFX/BarringtonRespawn2
+    index: 88
 --- !u!114 &2424733617150124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1941,6 +1944,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1448298925097787814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PlayerSFX/BarringtonRespawn2
+  m_EditorClassIdentifier: 
+  Path: event:/PlayerSFX/BarringtonRespawn2
+  Guid:
+    Data1: 2096843622
+    Data2: 1323130315
+    Data3: -828834381
+    Data4: 366143021
+  Banks:
+  - {fileID: -4602078392209194838}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1570051667032889358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2091,7 +2121,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Video.bank
   Name: Video
   StudioPath: bank:/Video
-  lastModified: 639110821153591795
+  lastModified: 639110833009767251
   FileSizes: []
   Exists: 1
 --- !u!114 &3299143982751840017
@@ -2190,7 +2220,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639110821153509808
+  lastModified: 639110833008906951
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2559,7 +2589,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/LevelSoundTracks.bank
   Name: LevelSoundTracks
   StudioPath: bank:/LevelSoundTracks
-  lastModified: 639110821152817376
+  lastModified: 639110833006284115
   FileSizes: []
   Exists: 1
 --- !u!114 &7980816308397880968
