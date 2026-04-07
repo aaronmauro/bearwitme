@@ -46,12 +46,12 @@ public Sprite newSprite;
     {
         if (Input.GetKeyDown(KeyCode.PageDown))
         {
-            EndLevel();
+            //EndLevel();
         }
         if (FadeStart)
         {
             fade += 0.01f;
-            Debug.Log(fade);
+            //Debug.Log(fade);
             FadeToBlack.color = new Color(0, 0, 0, fade);
             
         }

@@ -39,7 +39,7 @@ public class ChangeScene : MonoBehaviour
     }
 
     // enable and disable skip level
-    private void OnEnable()
+/*    private void OnEnable()
     {
         InputManager.GetInstance().skipLevelAction.action.performed += skipLevel;
         InputManager.GetInstance().skipLevelAction.action.Enable();
@@ -48,7 +48,7 @@ public class ChangeScene : MonoBehaviour
     {
         InputManager.GetInstance().skipLevelAction.action.performed -= skipLevel;
         InputManager.GetInstance().skipLevelAction.action.Disable();
-    }
+    }*/
 
     private void Start()
     {
@@ -124,11 +124,11 @@ public class ChangeScene : MonoBehaviour
         SceneManagerScript.instance.nextScene(sceneName);
     }
     // skip level
-    private void skipLevel(InputAction.CallbackContext context)
+/*    private void skipLevel(InputAction.CallbackContext context)
     {
         Debug.Log("why am i here");
         //playVideo();
         StartCoroutine(playVideo());
         player.playerInput = false;
-    }
+    }*/
 }
