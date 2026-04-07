@@ -270,33 +270,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-7218173690600723810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ParentsMuffledArguing1
-  m_EditorClassIdentifier: 
-  Path: event:/ParentsMuffledArguing1
-  Guid:
-    Data1: 455214045
-    Data2: 1076727916
-    Data3: -1662680698
-    Data4: -645948036
-  Banks:
-  - {fileID: 4196543210511341658}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 86749
 --- !u!114 &-7211790608732685254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +717,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Barrington.bank
   Name: Barrington
   StudioPath: bank:/Barrington
-  lastModified: 639110906458772464
+  lastModified: 639111032870220144
   FileSizes: []
   Exists: 1
 --- !u!114 &-4570363228950454038
@@ -1004,10 +977,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/ParentsMuffledArguing
   Guid:
-    Data1: -1865704335
-    Data2: 1189844718
-    Data3: -1015958595
-    Data4: -1831194466
+    Data1: -994340488
+    Data2: 1295249609
+    Data3: 1433253034
+    Data4: -577281747
   Banks:
   - {fileID: 4196543210511341658}
   IsStream: 1
@@ -1248,7 +1221,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639110684225985173
+  lastModified: 639111032870463856
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1320,10 +1293,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639110906458984899
+  lastModified: 639111032870473839
   FileSizes:
   - Name: 
-    Value: 5226
+    Value: 5182
   Exists: 1
 --- !u!114 &-273425419323144221
 MonoBehaviour:
@@ -1477,7 +1450,6 @@ MonoBehaviour:
   - {fileID: 1616991753964196954}
   - {fileID: -7019486187128859815}
   - {fileID: -3814484302680410048}
-  - {fileID: -7218173690600723810}
   - {fileID: -205903646520281575}
   - {fileID: 469124044204351037}
   - {fileID: -6018321788298739244}
@@ -1494,7 +1466,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639110906459663605
+  cacheTime: 639111032870869333
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -1652,28 +1624,26 @@ MonoBehaviour:
     index: 76
   - key: event:/PushPillow
     index: 77
-  - key: event:/ParentsMuffledArguing1
-    index: 78
   - key: event:/PlayerSFX/Pushing
-    index: 79
+    index: 78
   - key: event:/BeachWaveCrashing
-    index: 80
+    index: 79
   - key: event:/CloudsAmbience
-    index: 81
+    index: 80
   - key: event:/ForestAmbience
-    index: 82
+    index: 81
   - key: event:/CaveWinds
-    index: 83
+    index: 82
   - key: event:/StickyHand_2
-    index: 84
+    index: 83
   - key: event:/PlayerSFX/BarringtonRespawn2
-    index: 85
+    index: 84
   - key: event:/StickyHand
-    index: 86
+    index: 85
   - key: event:/RiftEnter
-    index: 87
+    index: 86
   - key: event:/RiftCloser
-    index: 88
+    index: 87
 --- !u!114 &2424733617150124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2094,7 +2064,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Video.bank
   Name: Video
   StudioPath: bank:/Video
-  lastModified: 639110217230716724
+  lastModified: 639107301459247618
   FileSizes: []
   Exists: 1
 --- !u!114 &3299143982751840017
@@ -2193,7 +2163,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639110906459663605
+  lastModified: 639111032870869333
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2535,7 +2505,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/LevelSoundTracks.bank
   Name: LevelSoundTracks
   StudioPath: bank:/LevelSoundTracks
-  lastModified: 639110906458974754
+  lastModified: 639111032870452738
   FileSizes: []
   Exists: 1
 --- !u!114 &7980816308397880968
