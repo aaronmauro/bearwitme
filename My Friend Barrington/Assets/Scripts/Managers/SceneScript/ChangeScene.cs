@@ -67,7 +67,7 @@ public class ChangeScene : MonoBehaviour
     }
     private void Update()
     {
-        if (FadeStart)
+        if (FadeStart && FadeToBlack != null)
         {
             fade += 0.01f;
             Debug.Log(fade);
@@ -112,8 +112,9 @@ public class ChangeScene : MonoBehaviour
     private IEnumerator playVideo()
     {
         cm.enabled = true;
-        FadeToBlack.gameObject.SetActive(true);
-        FadeStart = true;
+        if (FadeToBlack != null)
+            FadeToBlack.gameObject.SetActive(true);
+            FadeStart = true;
         if (boatVideo != null)
         {
             boatVideo.SetActive(true);
