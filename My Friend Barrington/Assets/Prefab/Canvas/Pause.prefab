@@ -438,24 +438,24 @@ MonoBehaviour:
   resumeButton: {fileID: 0}
   resumeGameSound:
     Guid:
-      Data1: -1435102404
-      Data2: 1122442204
-      Data3: 660266158
-      Data4: -788880369
+      Data1: -1369656748
+      Data2: 1253991384
+      Data3: 289751174
+      Data4: -272378485
     Path: event:/UIResumeGameButton
   quitGameSound:
     Guid:
-      Data1: -1049542646
-      Data2: 1100196044
-      Data3: 881503159
-      Data4: 11346086
+      Data1: -1703301059
+      Data2: 1314308550
+      Data3: 191827622
+      Data4: 1075665124
     Path: event:/UIMenuQuitGameButton
   pauseGameSound:
     Guid:
-      Data1: -1679351498
-      Data2: 1245449782
-      Data3: -1006151805
-      Data4: 735098523
+      Data1: 2121115805
+      Data2: 1248982204
+      Data3: -505669715
+      Data4: -415352064
     Path: event:/UIMenuExtraOne
 --- !u!1 &4447484969677766518
 GameObject:
