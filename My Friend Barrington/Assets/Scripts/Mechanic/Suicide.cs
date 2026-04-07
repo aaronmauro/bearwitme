@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Suicide : MonoBehaviour
 {
@@ -6,6 +7,18 @@ public class Suicide : MonoBehaviour
     [SerializeField] private GameObject targetObject;
 
     private bool playerInTrigger = false;
+
+    private void Awake()
+    {
+        InputManager.GetInstance().submitAction.action.performed += disableCapsule;
+        InputManager.GetInstance().submitAction.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        InputManager.GetInstance().submitAction.action.performed -= disableCapsule;
+        InputManager.GetInstance().submitAction.action.Disable();
+    }
 
     private void Update()
     {
@@ -32,5 +45,13 @@ public class Suicide : MonoBehaviour
         {
             playerInTrigger = false;
         }
+    }
+
+    private void disableCapsule(InputAction.CallbackContext context)
+    {
+        if (!playerInTrigger) return;
+        if (targetObject != null) return;
+
+        targetObject.SetActive(false);
     }
 }
