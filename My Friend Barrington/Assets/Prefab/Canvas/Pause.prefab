@@ -1080,6 +1080,14 @@ PrefabInstance:
     - target: {fileID: 4137279813199881579, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 5442657206043934414}
+    - target: {fileID: 4137279813199881579, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137279813199881579, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseGame, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4476266478564575350, guid: f0f710e87b2573d4db0e36ad04f0abd5, type: 3}
       propertyPath: m_Name

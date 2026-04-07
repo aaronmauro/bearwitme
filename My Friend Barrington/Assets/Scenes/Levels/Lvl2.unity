@@ -115212,17 +115212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particles: {fileID: 596137658}
---- !u!114 &1575600771 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1161130086236131893, guid: 08f5605137faf9d4688025081fb81624, type: 3}
-  m_PrefabInstance: {fileID: 1267869917}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7c8d89cf3a8b6b40bc8a5cfc923bf5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1575869428
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125904,10 +125893,10 @@ PrefabInstance:
     - target: {fileID: 3786230790206110539, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1575600771}
+      objectReference: {fileID: 1727467292}
     - target: {fileID: 3786230790206110539, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: nextScene
+      value: LoadMenu
       objectReference: {fileID: 0}
     - target: {fileID: 5090673404487962906, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
       propertyPath: m_AnchorMax.x
@@ -126074,6 +126063,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
+--- !u!114 &1727467292 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5442657206043934414, guid: aa21e685b19361247b29a2d28ee18147, type: 3}
+  m_PrefabInstance: {fileID: 1727467291}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd7ab6e888d094849a735539fce62356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1729377345
 PrefabInstance:
   m_ObjectHideFlags: 0

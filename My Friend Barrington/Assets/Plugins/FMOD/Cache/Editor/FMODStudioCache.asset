@@ -717,7 +717,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Barrington.bank
   Name: Barrington
   StudioPath: bank:/Barrington
-  lastModified: 639111018758113498
+  lastModified: 639111078057735814
   FileSizes: []
   Exists: 1
 --- !u!114 &-4570363228950454038
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639111018758354872
+  lastModified: 639111078057901038
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639111018758366584
+  lastModified: 639111078057916073
   FileSizes:
   - Name: 
     Value: 5182
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639111018758773818
+  cacheTime: 639111078058555834
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -1624,28 +1624,26 @@ MonoBehaviour:
     index: 76
   - key: event:/PushPillow
     index: 77
-  - key: event:/ParentsMuffledArguing1
-    index: 78
   - key: event:/PlayerSFX/Pushing
-    index: 79
+    index: 78
   - key: event:/BeachWaveCrashing
-    index: 80
+    index: 79
   - key: event:/CloudsAmbience
-    index: 81
+    index: 80
   - key: event:/ForestAmbience
-    index: 82
+    index: 81
   - key: event:/CaveWinds
-    index: 83
+    index: 82
   - key: event:/StickyHand_2
-    index: 84
+    index: 83
   - key: event:/PlayerSFX/BarringtonRespawn2
-    index: 85
+    index: 84
   - key: event:/StickyHand
-    index: 86
+    index: 85
   - key: event:/RiftEnter
-    index: 87
+    index: 86
   - key: event:/RiftCloser
-    index: 88
+    index: 87
 --- !u!114 &2424733617150124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2066,7 +2064,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Video.bank
   Name: Video
   StudioPath: bank:/Video
-  lastModified: 639110821153591795
+  lastModified: 639111078058555834
   FileSizes: []
   Exists: 1
 --- !u!114 &3299143982751840017
@@ -2165,7 +2163,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639111018758773818
+  lastModified: 639111078058465705
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2507,7 +2505,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/LevelSoundTracks.bank
   Name: LevelSoundTracks
   StudioPath: bank:/LevelSoundTracks
-  lastModified: 639111018758339826
+  lastModified: 639111078057895709
   FileSizes: []
   Exists: 1
 --- !u!114 &7980816308397880968
