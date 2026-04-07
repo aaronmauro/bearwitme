@@ -42,7 +42,7 @@ public class ButtonManager : MonoBehaviour
         addButton();
     }
     // adding and removing skipping video methods
-    private void OnEnable()
+/*    private void OnEnable()
     {
         InputManager.GetInstance().videoSkipAction.action.performed += skipVideoMethod;
         InputManager.GetInstance().videoNextAction.action.performed += nextVideoMethod;
@@ -56,7 +56,7 @@ public class ButtonManager : MonoBehaviour
         InputManager.GetInstance().videoNextAction.action.performed -= nextVideoMethod;
         InputManager.GetInstance().videoSkipAction.action.Disable();
         InputManager.GetInstance().videoNextAction.action.Disable();
-    }
+    }*/
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -112,7 +112,7 @@ public class ButtonManager : MonoBehaviour
     }
 
     // button to skip video
-    private void skipVideoMethod(InputAction.CallbackContext context)
+    /*private void skipVideoMethod(InputAction.CallbackContext context)
     {
         if (VideoManager.adsNumber == 0)
         {
@@ -133,7 +133,7 @@ public class ButtonManager : MonoBehaviour
         VideoManager.newVideoCount++;
         videoManager.afterLoopVideo = true;
         //Debug.Log("Next Video: " + VideoManager.videoCount);
-    }
+    }*/
 
     // check witch video to play
     private void whatVideoToPlay(int num)

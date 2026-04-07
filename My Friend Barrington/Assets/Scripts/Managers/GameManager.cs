@@ -129,7 +129,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate() // THIS IS ALL TEMPORARY STUFF FOR PLAYTESTING WEEKLY BUILDS, BY DV
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1)){
+/*        if(Input.GetKeyDown(KeyCode.Alpha1)){
             SceneManager.LoadScene("Lvl 1");
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             player.transform.position = DebugTeleport.position;
-        }
+        }*/
     }
 
     // respawn player Method

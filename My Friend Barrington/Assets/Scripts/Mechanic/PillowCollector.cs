@@ -33,6 +33,8 @@ public Sprite newSprite;
     [SerializeField]
     GameObject four;
 
+    [SerializeField] DialogueTrigger diaTrig;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,12 +46,12 @@ public Sprite newSprite;
     {
         if (Input.GetKeyDown(KeyCode.PageDown))
         {
-            EndLevel();
+            //EndLevel();
         }
         if (FadeStart)
         {
             fade += 0.01f;
-            Debug.Log(fade);
+            //Debug.Log(fade);
             FadeToBlack.color = new Color(0, 0, 0, fade);
             
         }
@@ -93,6 +95,11 @@ public Sprite newSprite;
     private IEnumerator ToNextLevel(float delay)
     {
         yield return new WaitForSeconds(delay);
+        if (diaTrig != null)
+        {
+            diaTrig.UnlockPlayerMovement();
+            Destroy(diaTrig);
+        }
         SceneManager.LoadScene("Video");
         VideoManager.adsNumber = 1;
     }

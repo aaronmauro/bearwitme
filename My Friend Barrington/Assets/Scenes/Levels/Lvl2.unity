@@ -28591,6 +28591,7 @@ MonoBehaviour:
   two: {fileID: 477413738}
   three: {fileID: 535501323}
   four: {fileID: 1251800708}
+  diaTrig: {fileID: 1421687246}
 --- !u!65 &374855906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -105556,6 +105557,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6268286023948457037, guid: 2a4f01a8b1cb9e141a67f68746cd7580, type: 3}
   m_PrefabInstance: {fileID: 1421687243}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1421687246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6788991351234953712, guid: 2a4f01a8b1cb9e141a67f68746cd7580, type: 3}
+  m_PrefabInstance: {fileID: 1421687243}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17955699286e2c84fb7ad1de3834635d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1421813301
 PrefabInstance:
   m_ObjectHideFlags: 0
