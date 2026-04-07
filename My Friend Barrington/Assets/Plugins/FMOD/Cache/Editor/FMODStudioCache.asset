@@ -717,7 +717,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Barrington.bank
   Name: Barrington
   StudioPath: bank:/Barrington
-  lastModified: 639111007259392213
+  lastModified: 639111024660076700
   FileSizes: []
   Exists: 1
 --- !u!114 &-4570363228950454038
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639111009164563254
+  lastModified: 639111024660308780
   FileSizes: []
   Exists: 1
 --- !u!114 &-1459931971722098020
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639111009164563254
+  lastModified: 639111024660318825
   FileSizes:
   - Name: 
     Value: 5182
@@ -1466,7 +1466,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -423273127227636401}
   cacheVersion: 131848
-  cacheTime: 639111009164923252
+  cacheTime: 639111024660730926
   SerializableEventsDict:
   - key: event:/PlayerSFX/BarringtonWalking
     index: 0
@@ -2064,7 +2064,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Video.bank
   Name: Video
   StudioPath: bank:/Video
-  lastModified: 639111007159617273
+  lastModified: 639110748573372458
   FileSizes: []
   Exists: 1
 --- !u!114 &3299143982751840017
@@ -2163,7 +2163,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639111009164923252
+  lastModified: 639111024660730926
   FileSizes: []
   Exists: 1
 --- !u!114 &4234587101684707336
@@ -2505,7 +2505,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/LevelSoundTracks.bank
   Name: LevelSoundTracks
   StudioPath: bank:/LevelSoundTracks
-  lastModified: 639111009164553253
+  lastModified: 639111024660287383
   FileSizes: []
   Exists: 1
 --- !u!114 &7980816308397880968

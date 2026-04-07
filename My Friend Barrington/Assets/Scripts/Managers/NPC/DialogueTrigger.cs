@@ -155,7 +155,7 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private void UnlockPlayerMovement()
+    public void UnlockPlayerMovement()
     {
         LockPlayerMovement(false);
 
