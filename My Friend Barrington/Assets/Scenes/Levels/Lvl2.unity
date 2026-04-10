@@ -14341,7 +14341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &197204367
 Transform:
   m_ObjectHideFlags: 0
@@ -39385,7 +39385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1881598811397850564, guid: 10654a941339ec74da23a156fa439d6a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3581676538182966402, guid: 10654a941339ec74da23a156fa439d6a, type: 3}
       propertyPath: m_Enabled
@@ -94530,7 +94530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 62985516622674423, guid: 4f51abc98f1a525499e3a11c32b52efe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7100450356779288093, guid: 4f51abc98f1a525499e3a11c32b52efe, type: 3}
       propertyPath: m_Enabled
@@ -106330,7 +106330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5340515742250837978, guid: e82ac9e089d8599429c91c55501619fc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5751233172857192131, guid: e82ac9e089d8599429c91c55501619fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -126014,7 +126014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3326371560259122948, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7394446336111120256, guid: 9724fed417adaae4da2a8e6e9a0f7298, type: 3}
       propertyPath: m_LocalPosition.x
@@ -152413,7 +152413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4937796002684560686, guid: 200b3b0af88db7b4faad88f3d31ba7e4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7589700182933271051, guid: 200b3b0af88db7b4faad88f3d31ba7e4, type: 3}
       propertyPath: m_Enabled
